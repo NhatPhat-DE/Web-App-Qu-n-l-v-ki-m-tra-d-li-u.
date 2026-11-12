@@ -1,0 +1,84 @@
+{
+  "dialect": "re2-v1",
+  "rows": [
+    [
+      "SP0001"
+    ],
+    [
+      "SP9999"
+    ],
+    [
+      "sp0001"
+    ],
+    [
+      "SP123"
+    ],
+    [
+      " SP0001"
+    ],
+    [
+      "SP0001 "
+    ],
+    [
+      "SP00001"
+    ],
+    [
+      ""
+    ],
+    [
+      "NULL"
+    ],
+    [
+      "AB0001"
+    ]
+  ],
+  "initial": {
+    "pattern": "SP[0-9]{4}",
+    "statistics": {
+      "total_rows": 10,
+      "error_row_count": 7,
+      "violation_count": 7,
+      "error_row_rate": "70.0000"
+    },
+    "error_rows": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "error_code": "PATTERN_MISMATCH"
+  },
+  "after_edit": {
+    "pattern": "[A-Z]{2}[0-9]{4}",
+    "statistics": {
+      "total_rows": 10,
+      "error_row_count": 6,
+      "violation_count": 6,
+      "error_row_rate": "60.0000"
+    },
+    "error_rows": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "newly_passing_rows": [
+      10
+    ],
+    "error_code": "PATTERN_MISMATCH"
+  },
+  "missing_rows": [
+    8
+  ],
+  "notes": [
+    "Chỉ một rule pattern bật; không required hoặc rule khác.",
+    "Đáp án được ghi trước thao tác trình duyệt; chưa nghiệm thu QT-04C.",
+    "AB0001 tại bản ghi10 đạt thêm sau sửa; NULL tại bản ghi9 vẫn lỗi.",
+    "Không sửa demo48 hoặc chạy thêm trên demo có sẵn."
+  ]
+}

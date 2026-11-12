@@ -1,0 +1,66 @@
+{
+  "tool": "openpyxl 3.1.5 (isolated verification environment only)",
+  "manual_excel_or_libreoffice": false,
+  "results": [
+    {
+      "file": "dataset-28-run-2-report.xlsx",
+      "sheets": [
+        "Tổng quan",
+        "Chi tiết lỗi",
+        "Quy tắc đã áp dụng"
+      ],
+      "violation_rows": 3,
+      "all_nonblank_cells_text": true,
+      "no_formulas_or_hyperlinks": true,
+      "freeze_wrap_filters_widths_verified": true
+    },
+    {
+      "file": "dataset-28-run-5-report.xlsx",
+      "sheets": [
+        "Tổng quan",
+        "Chi tiết lỗi",
+        "Quy tắc đã áp dụng"
+      ],
+      "violation_rows": 0,
+      "all_nonblank_cells_text": true,
+      "no_formulas_or_hyperlinks": true,
+      "freeze_wrap_filters_widths_verified": true
+    },
+    {
+      "file": "dataset-42-run-28-report.xlsx",
+      "sheets": [
+        "Tổng quan",
+        "Chi tiết lỗi",
+        "Quy tắc đã áp dụng"
+      ],
+      "violation_rows": 11,
+      "all_nonblank_cells_text": true,
+      "no_formulas_or_hyperlinks": true,
+      "freeze_wrap_filters_widths_verified": true
+    },
+    {
+      "file": "dataset-44-run-33-report.xlsx",
+      "sheets": [
+        "Tổng quan",
+        "Chi tiết lỗi",
+        "Quy tắc đã áp dụng"
+      ],
+      "violation_rows": 5,
+      "all_nonblank_cells_text": true,
+      "no_formulas_or_hyperlinks": true,
+      "freeze_wrap_filters_widths_verified": true
+    },
+    {
+      "file": "dataset-46-run-38-report.xlsx",
+      "sheets": [
+        "Tổng quan",
+        "Chi tiết lỗi",
+        "Quy tắc đã áp dụng"
+      ],
+      "violation_rows": 5,
+      "all_nonblank_cells_text": true,
+      "no_formulas_or_hyperlinks": true,
+      "freeze_wrap_filters_widths_verified": true
+    }
+  ]
+}

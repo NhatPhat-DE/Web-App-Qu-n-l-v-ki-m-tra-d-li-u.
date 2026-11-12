@@ -1,0 +1,11 @@
+integer_value,decimal_value,boolean_value
+0012,01.20,true
++12,.5,false
+-0,1.,true
+1.0,-1e+3,TRUE
+1e3,NaN,1
+ 1 ,"1,2", false 
+,,
+１２,1_000,NULL
+42,1.234567,false
+   ,	, 

@@ -1,0 +1,92 @@
+
+> data-catalog-frontend@0.1.0 dev
+> vite
+
+
+  VITE v8.3.4  ready in 1349 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+1:48:05 PM [vite] (client) hmr update /src/QualityRules.tsx, /src/DashboardStats.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx
+1:48:05 PM [vite] (client) hmr update /src/RuleForm.tsx
+1:48:05 PM [vite] (client) hmr update /src/AISuggestions.tsx
+1:48:05 PM [vite] (client) hmr update /src/AISuggestions.tsx
+1:48:05 PM [vite] (client) hmr update /src/DashboardStats.tsx, /src/QualityRules.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx
+1:48:05 PM [vite] (client) hmr update /src/QualityRuns.tsx
+1:50:33 PM [vite] (client) hmr update /src/RuleForm.tsx
+5:34:51 PM [vite] (client) hmr update /src/QualityRules.tsx, /src/DashboardStats.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx
+5:34:51 PM [vite] (client) hmr update /src/RuleForm.tsx
+5:34:51 PM [vite] (client) hmr update /src/DashboardStats.tsx, /src/QualityRules.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx, /src/ViolationTable.tsx
+5:34:51 PM [vite] (client) hmr update /src/ViolationTable.tsx
+6:12:27 PM [vite] (client) hmr update /src/QualityRules.tsx, /src/DashboardStats.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx
+6:12:27 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx
+6:12:27 PM [vite] (client) hmr update /src/AISuggestions.tsx
+6:12:27 PM [vite] (client) hmr update /src/RuleForm.tsx
+6:12:27 PM [vite] (client) hmr update /src/DashboardStats.tsx, /src/QualityRules.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx, /src/ViolationTable.tsx
+6:12:27 PM [vite] (client) hmr update /src/QualityRules.tsx
+6:12:27 PM [vite] (client) hmr update /src/QualityRuns.tsx
+6:12:27 PM [vite] (client) hmr update /src/ViolationTable.tsx
+6:12:27 PM [vite] (client) hmr update /src/style.css
+6:13:03 PM [vite] (client) hmr update /src/AISuggestions.tsx
+6:13:03 PM [vite] (client) hmr update /src/RuleForm.tsx
+10:13:36 PM [vite] (client) hmr update /src/SessionApp.tsx, /src/App.tsx, /src/ImportForm.tsx, /src/DatasetDetail.tsx, /src/VersionImportForm.tsx, /src/AdminUsers.tsx, /src/MetadataEditors.tsx, /src/QualityRules.tsx, /src/DashboardStats.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx, /src/ReportDownload.tsx
+10:13:36 PM [vite] (client) hmr update /src/QualityRuns.tsx
+10:13:36 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx
+10:14:02 PM [vite] (client) hmr update /src/ReportDownload.tsx
+10:15:20 PM [vite] (client) hmr update /src/ReportDownload.tsx
+10:16:59 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx
+10:21:02 PM [vite] (client) hmr update /src/ReportDownload.tsx
+11:54:30 PM [vite] (client) hmr update /src/QualityRules.tsx, /src/DashboardStats.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx
+11:54:30 PM [vite] (client) hmr update /src/RuleForm.tsx
+11:54:30 PM [vite] (client) hmr update /src/style.css
+11:54:30 PM [vite] (client) hmr update /src/DashboardStats.tsx, /src/QualityRules.tsx, /src/QualityRuns.tsx, /src/AISuggestions.tsx, /src/ViolationTable.tsx
+11:55:01 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx
+11:55:01 PM [vite] (client) hmr update /src/QualityRuns.tsx
+4:20:11 PM [vite] (client) hmr update /src/App.tsx, /src/ImportForm.tsx, /src/DatasetDetail.tsx, /src/VersionImportForm.tsx
+4:20:14 PM [vite] (client) hmr update /src/App.tsx
+4:20:33 PM [vite] (client) hmr update /src/style.css
+4:20:40 PM [vite] (client) hmr update /src/App.tsx
+4:21:41 PM [vite] (client) hmr update /src/App.tsx
+4:22:38 PM [vite] (client) hmr update /src/App.tsx
+9:51:23 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx
+9:51:23 PM [vite] (client) hmr update /src/QualityRuns.tsx
+9:51:23 PM [vite] (client) hmr update /src/style.css
+9:52:12 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx, /src/RunComparison.tsx
+9:53:33 PM [vite] (client) hmr update /src/RunComparison.tsx
+9:55:04 PM [vite] (client) hmr update /src/QualityRuns.tsx, /src/DashboardStats.tsx, /src/ReportDownload.tsx, /src/RunComparison.tsx
+11:30:11 PM [vite] (client) hmr update /src/RunComparison.tsx
+11:30:11 PM [vite] (client) hmr update /src/RunComparison.tsx
+11:30:11 PM [vite] (client) hmr update /src/QualityRuns.tsx
+11:30:11 PM [vite] (client) hmr update /src/style.css
+11:30:46 PM [vite] (client) hmr update /src/Modal.tsx
+11:30:46 PM [vite] (client) hmr update /src/QualityRuns.tsx
+11:42:55 PM [vite] (client) hmr update /src/QualityRules.tsx
+11:43:21 PM [vite] (client) hmr update /src/DashboardStats.tsx, /src/QualityRuns.tsx
+11:44:14 PM [vite] (client) hmr update /src/DatasetDetail.tsx
+11:44:14 PM [vite] (client) hmr update /src/QualityRuns.tsx
+11:44:14 PM [vite] (client) hmr update /src/MetadataEditors.tsx
+11:44:14 PM [vite] (client) hmr update /src/App.tsx
+11:44:14 PM [vite] (client) hmr update /src/BackendBadge.tsx
+11:44:23 PM [vite] (client) hmr update /src/DashboardStats.tsx
+11:45:02 PM [vite] (client) hmr update /src/style.css
+11:45:23 PM [vite] (client) hmr update /src/DashboardStats.tsx
+11:46:39 PM [vite] (client) hmr update /src/style.css
+11:48:44 PM [vite] (client) hmr update /src/MetadataEditors.tsx
+11:48:44 PM [vite] (client) hmr update /src/style.css
+11:49:41 PM [vite] (client) hmr update /src/style.css
+11:51:25 PM [vite] (client) hmr update /src/DatasetDetail.tsx
+11:51:25 PM [vite] (client) hmr update /src/style.css
+11:51:59 PM [vite] (client) hmr update /src/style.css
+11:53:36 PM [vite] (client) hmr update /src/DatasetDetail.tsx
+11:53:36 PM [vite] (client) hmr update /src/ViolationTable.tsx
+11:53:36 PM [vite] (client) hmr update /src/QualityRules.tsx
+1:33:58 AM [vite] (client) hmr update /src/QualityRuns.tsx
+1:34:31 AM [vite] (client) hmr update /src/RunComparison.tsx
+1:34:31 AM [vite] (client) hmr update /src/DatasetDetail.tsx
+1:34:31 AM [vite] (client) hmr update /src/QualityRules.tsx
+1:35:10 AM [vite] (client) hmr update /src/style.css
+1:35:13 AM [vite] (client) hmr update /src/style.css
+1:35:41 AM [vite] (client) hmr update /src/RunComparison.tsx
+1:35:41 AM [vite] (client) hmr update /src/style.css
+1:40:39 AM [vite] (client) hmr update /src/QualityRuns.tsx
+1:40:39 AM [vite] (client) hmr update /src/RunComparison.tsx
+1:40:43 AM [vite] (client) hmr update /src/style.css

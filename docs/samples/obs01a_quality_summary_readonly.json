@@ -1,0 +1,271 @@
+{
+  "verified_by": "authenticated HTTP GET via local Vite proxy; no frontend implemented or browser acceptance",
+  "dataset_id": 28,
+  "runs": [
+    2,
+    5
+  ],
+  "responses": {
+    "2": {
+      "summary_schema_version": "1",
+      "context": {
+        "dataset_id": 28,
+        "version_id": 28,
+        "version_number": 1,
+        "original_filename": "quality_errors_demo.csv",
+        "run_id": 2,
+        "status": "completed",
+        "started_at": "2026-10-14T09:55:04.957183+00:00",
+        "finished_at": "2026-10-14T09:55:05.016629+00:00",
+        "engine_version": "quality-v1",
+        "rule_set_fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87",
+        "rule_snapshot_source": "saved_run"
+      },
+      "overall": {
+        "total_rows": 4,
+        "error_row_count": 2,
+        "violation_count": 3,
+        "error_row_rate": "50.0000",
+        "pass_rate": "50.0000"
+      },
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "label": "Completeness",
+          "rule_count": 1,
+          "violation_count": 1,
+          "violating_row_count": 1,
+          "assessment_status": "configured"
+        },
+        {
+          "dimension": "uniqueness",
+          "label": "Uniqueness",
+          "rule_count": 0,
+          "violation_count": 0,
+          "violating_row_count": 0,
+          "assessment_status": "not_assessed"
+        },
+        {
+          "dimension": "validity",
+          "label": "Validity",
+          "rule_count": 0,
+          "violation_count": 0,
+          "violating_row_count": 0,
+          "assessment_status": "not_assessed"
+        },
+        {
+          "dimension": "domain_conformance",
+          "label": "Domain conformance",
+          "rule_count": 1,
+          "violation_count": 2,
+          "violating_row_count": 2,
+          "assessment_status": "configured"
+        }
+      ],
+      "rules": {
+        "items": [
+          {
+            "rule_order": 1,
+            "rule_id_snapshot": 2,
+            "name": "Code required",
+            "rule_type": "required",
+            "columns": [
+              "code"
+            ],
+            "config": {},
+            "dimension": "completeness",
+            "violation_count": 1,
+            "violating_row_count": 1
+          },
+          {
+            "rule_order": 2,
+            "rule_id_snapshot": 3,
+            "name": "Amount 0 to 100",
+            "rule_type": "numeric_range",
+            "columns": [
+              "amount"
+            ],
+            "config": {
+              "max": "100",
+              "min": "0"
+            },
+            "dimension": "domain_conformance",
+            "violation_count": 2,
+            "violating_row_count": 2
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "page_size": 20
+      },
+      "column_scopes": {
+        "items": [
+          {
+            "scope_kind": "column",
+            "columns": [
+              "code"
+            ],
+            "rule_count": 1,
+            "rule_ids": [
+              2
+            ],
+            "violation_count": 1,
+            "violating_row_count": 1
+          },
+          {
+            "scope_kind": "column",
+            "columns": [
+              "amount"
+            ],
+            "rule_count": 1,
+            "rule_ids": [
+              3
+            ],
+            "violation_count": 2,
+            "violating_row_count": 2
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "page_size": 20
+      },
+      "breakdown_note": "Chỉ đếm vi phạm và bản ghi có vi phạm. Chưa có mẫu số đủ điều kiện; không trả tỷ lệ chi tiết. Không cộng số bản ghi giữa các nhóm thành tổng bản ghi lỗi."
+    },
+    "5": {
+      "summary_schema_version": "1",
+      "context": {
+        "dataset_id": 28,
+        "version_id": 30,
+        "version_number": 2,
+        "original_filename": "quality_errors_fixed.csv",
+        "run_id": 5,
+        "status": "completed",
+        "started_at": "2026-10-14T10:18:18.381174+00:00",
+        "finished_at": "2026-10-14T10:18:18.476175+00:00",
+        "engine_version": "quality-v1",
+        "rule_set_fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87",
+        "rule_snapshot_source": "saved_run"
+      },
+      "overall": {
+        "total_rows": 4,
+        "error_row_count": 0,
+        "violation_count": 0,
+        "error_row_rate": "0.0000",
+        "pass_rate": "100.0000"
+      },
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "label": "Completeness",
+          "rule_count": 1,
+          "violation_count": 0,
+          "violating_row_count": 0,
+          "assessment_status": "configured"
+        },
+        {
+          "dimension": "uniqueness",
+          "label": "Uniqueness",
+          "rule_count": 0,
+          "violation_count": 0,
+          "violating_row_count": 0,
+          "assessment_status": "not_assessed"
+        },
+        {
+          "dimension": "validity",
+          "label": "Validity",
+          "rule_count": 0,
+          "violation_count": 0,
+          "violating_row_count": 0,
+          "assessment_status": "not_assessed"
+        },
+        {
+          "dimension": "domain_conformance",
+          "label": "Domain conformance",
+          "rule_count": 1,
+          "violation_count": 0,
+          "violating_row_count": 0,
+          "assessment_status": "configured"
+        }
+      ],
+      "rules": {
+        "items": [
+          {
+            "rule_order": 1,
+            "rule_id_snapshot": 2,
+            "name": "Code required",
+            "rule_type": "required",
+            "columns": [
+              "code"
+            ],
+            "config": {},
+            "dimension": "completeness",
+            "violation_count": 0,
+            "violating_row_count": 0
+          },
+          {
+            "rule_order": 2,
+            "rule_id_snapshot": 3,
+            "name": "Amount 0 to 100",
+            "rule_type": "numeric_range",
+            "columns": [
+              "amount"
+            ],
+            "config": {
+              "max": "100",
+              "min": "0"
+            },
+            "dimension": "domain_conformance",
+            "violation_count": 0,
+            "violating_row_count": 0
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "page_size": 20
+      },
+      "column_scopes": {
+        "items": [
+          {
+            "scope_kind": "column",
+            "columns": [
+              "code"
+            ],
+            "rule_count": 1,
+            "rule_ids": [
+              2
+            ],
+            "violation_count": 0,
+            "violating_row_count": 0
+          },
+          {
+            "scope_kind": "column",
+            "columns": [
+              "amount"
+            ],
+            "rule_count": 1,
+            "rule_ids": [
+              3
+            ],
+            "violation_count": 0,
+            "violating_row_count": 0
+          }
+        ],
+        "total": 2,
+        "page": 1,
+        "page_size": 20
+      },
+      "breakdown_note": "Chỉ đếm vi phạm và bản ghi có vi phạm. Chưa có mẫu số đủ điều kiện; không trả tỷ lệ chi tiết. Không cộng số bản ghi giữa các nhóm thành tổng bản ghi lỗi."
+    }
+  },
+  "seven_business_tables_unchanged": true,
+  "business_checksums": {
+    "datasets": "39355e5caa3599129522885d2118fe8bdf06c956567dd21fec365e146614f15e",
+    "dataset_columns": "e3f74d7da36de4ab3ba67f127bb64c6ad4a56f008b8c0447be062d650753d941",
+    "dataset_versions": "55b9318fa64831a047993789731f543b198835f477afb2f8d087376371581862",
+    "dataset_rows": "dc1a629ac27dbbe0fddd1abae53dd3efa0d787b724c00f0c709bd0ce053bfeed",
+    "quality_rules": "9680904a96313c9674f9e8d9d097067f6d8719d73f263545a384524c095a403d",
+    "quality_runs": "27e10a2ba403b2e1e425936c5c28dec35b41f42924d3de5a07accb5840807961",
+    "quality_violations": "f529df89ad96cc16921101133926bfd7dd6b077bfac3599ce9c1abfd3a471def"
+  },
+  "temporary_auth_session_revoked": true
+}

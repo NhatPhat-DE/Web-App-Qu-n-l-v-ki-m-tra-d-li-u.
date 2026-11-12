@@ -1,0 +1,574 @@
+{
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "D:\\UserFile\\DNCN\\Webb\\.experiments\\pattern-qt04a0\\venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "windows_version": [
+      10,
+      0,
+      26100,
+      2,
+      ""
+    ],
+    "machine": "AMD64",
+    "bits": 64,
+    "package": "google-re2",
+    "version": "1.1.20251105",
+    "default_max_mem": 8388608
+  },
+  "semantics": [
+    {
+      "pattern": "[A-Z]{2}-[0-9]{4}",
+      "value": "AB-1234",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "[A-Z]{2}-[0-9]{4}",
+      "value": "ab-1234",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "a",
+      "value": "a\n",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "a$",
+      "value": "a\n",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "^a$",
+      "value": "a\n",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "a",
+      "value": "aa",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "a",
+      "value": " a",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "a",
+      "value": "a ",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "\\d+",
+      "value": "123",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "\\d+",
+      "value": "１２３",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "\\d+",
+      "value": "١٢٣",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "\\w+",
+      "value": "Az_09",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "\\w+",
+      "value": "é",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "\\w+",
+      "value": "中",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "\\s+",
+      "value": " \t\r\n\f",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "\\s",
+      "value": "\u000b",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "\\s",
+      "value": " ",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "é",
+      "value": "é",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "é",
+      "value": "é",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": ".",
+      "value": "😀",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": ".",
+      "value": "中",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": ".",
+      "value": "\n",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": "[\n]",
+      "value": "\n",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "a*",
+      "value": "",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "",
+      "value": "",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "a+",
+      "value": "",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "pattern": " +",
+      "value": "   ",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "(?i)abc",
+      "value": "ABC",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "\\p{L}+",
+      "value": "TiếngViệt",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "pattern": "[[:alpha:]]+",
+      "value": "ABC",
+      "expected": true,
+      "actual": true
+    }
+  ],
+  "compile": [
+    {
+      "pattern": "(a)\\1",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid escape sequence: \\\\1'"
+    },
+    {
+      "pattern": "(?=a)a",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid perl operator: (?='"
+    },
+    {
+      "pattern": "(?!a)b",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid perl operator: (?!'"
+    },
+    {
+      "pattern": "(?<=a)b",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid perl operator: (?<='"
+    },
+    {
+      "pattern": "(?<!a)b",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid perl operator: (?<!'"
+    },
+    {
+      "pattern": "[",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'missing ]: ['"
+    },
+    {
+      "pattern": "a{1001}",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid repetition size: {1001}'"
+    },
+    {
+      "pattern": "\\Z",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid escape sequence: \\\\Z'"
+    },
+    {
+      "pattern": "\\ud800",
+      "compiled": false,
+      "error_type": "Error",
+      "error": "b'invalid escape sequence: \\\\u'"
+    },
+    {
+      "pattern": "lone surrogate",
+      "compiled": false,
+      "error_type": "UnicodeEncodeError"
+    }
+  ],
+  "budgets": [
+    {
+      "pattern": "a",
+      "max_mem": 0,
+      "compiled": true,
+      "programsize": 5,
+      "compile_seconds": 3.3299998904112726e-05
+    },
+    {
+      "pattern": "a",
+      "max_mem": 1024,
+      "compiled": true,
+      "programsize": 5,
+      "compile_seconds": 2.680000034160912e-05
+    },
+    {
+      "pattern": "a",
+      "max_mem": 65536,
+      "compiled": true,
+      "programsize": 5,
+      "compile_seconds": 2.3600001441081986e-05
+    },
+    {
+      "pattern": "a",
+      "max_mem": 8388608,
+      "compiled": true,
+      "programsize": 5,
+      "compile_seconds": 2.350000067963265e-05
+    },
+    {
+      "pattern": "[a-z]{1000}",
+      "max_mem": 0,
+      "compiled": true,
+      "programsize": 1004,
+      "compile_seconds": 0.00022650000028079376
+    },
+    {
+      "pattern": "[a-z]{1000}",
+      "max_mem": 1024,
+      "compiled": false,
+      "error": "b'pattern too large - compile failed'"
+    },
+    {
+      "pattern": "[a-z]{1000}",
+      "max_mem": 65536,
+      "compiled": true,
+      "programsize": 1004,
+      "compile_seconds": 0.00017189999925903976
+    },
+    {
+      "pattern": "[a-z]{1000}",
+      "max_mem": 8388608,
+      "compiled": true,
+      "programsize": 1004,
+      "compile_seconds": 0.00019880000036209822
+    },
+    {
+      "pattern": "([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})",
+      "max_mem": 0,
+      "compiled": true,
+      "programsize": 30064,
+      "compile_seconds": 0.005009399999835296
+    },
+    {
+      "pattern": "([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})",
+      "max_mem": 1024,
+      "compiled": false,
+      "error": "b'pattern too large - compile failed'"
+    },
+    {
+      "pattern": "([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})",
+      "max_mem": 65536,
+      "compiled": false,
+      "error": "b'pattern too large - compile failed'"
+    },
+    {
+      "pattern": "([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})([a-z]{1000})",
+      "max_mem": 8388608,
+      "compiled": true,
+      "programsize": 30064,
+      "compile_seconds": 0.006972000002861023
+    }
+  ],
+  "benchmarks": [
+    {
+      "pattern": "(a+)+$",
+      "median_seconds": 0.00014620000001741573,
+      "samples_seconds": [
+        0.00016220000179600902,
+        0.00014620000001741573,
+        0.0001542999998491723,
+        0.00014340000052470714,
+        0.00014369999917107634
+      ],
+      "input_codepoints": 4097,
+      "memory": {
+        "WorkingSetSize": 23994368,
+        "PeakWorkingSetSize": 23994368,
+        "PrivateUsage": 15261696,
+        "PeakPagefileUsage": 15261696
+      }
+    },
+    {
+      "pattern": "(a+)+$",
+      "median_seconds": 9.470000077271834e-05,
+      "samples_seconds": [
+        0.00011920000179088674,
+        9.679999857326038e-05,
+        9.470000077271834e-05,
+        9.29000016185455e-05,
+        9.409999984200113e-05
+      ],
+      "input_codepoints": 65537,
+      "memory": {
+        "WorkingSetSize": 24150016,
+        "PeakWorkingSetSize": 24150016,
+        "PrivateUsage": 15413248,
+        "PeakPagefileUsage": 15413248
+      }
+    },
+    {
+      "pattern": "(a+)+$",
+      "median_seconds": 0.002186900001106551,
+      "samples_seconds": [
+        0.0027365999994799495,
+        0.002312699998583412,
+        0.002186900001106551,
+        0.0021457000002556015,
+        0.002046200002951082
+      ],
+      "input_codepoints": 1048577,
+      "memory": {
+        "WorkingSetSize": 25104384,
+        "PeakWorkingSetSize": 26091520,
+        "PrivateUsage": 16404480,
+        "PeakPagefileUsage": 17518592
+      }
+    },
+    {
+      "pattern": "(a|aa)+$",
+      "median_seconds": 0.0003509999987727497,
+      "samples_seconds": [
+        0.00041929999861167744,
+        0.00040689999877940863,
+        0.0003509999987727497,
+        0.00033969999640248716,
+        0.0003371999991941266
+      ],
+      "input_codepoints": 4097,
+      "memory": {
+        "WorkingSetSize": 23900160,
+        "PeakWorkingSetSize": 24662016,
+        "PrivateUsage": 15142912,
+        "PeakPagefileUsage": 16203776
+      }
+    },
+    {
+      "pattern": "(a|aa)+$",
+      "median_seconds": 9.829999908106402e-05,
+      "samples_seconds": [
+        0.0001297999988310039,
+        0.00010090000068885274,
+        9.829999908106402e-05,
+        9.639999916544184e-05,
+        9.76999981503468e-05
+      ],
+      "input_codepoints": 65537,
+      "memory": {
+        "WorkingSetSize": 24137728,
+        "PeakWorkingSetSize": 24137728,
+        "PrivateUsage": 15355904,
+        "PeakPagefileUsage": 15355904
+      }
+    },
+    {
+      "pattern": "(a|aa)+$",
+      "median_seconds": 0.001725300000543939,
+      "samples_seconds": [
+        0.001934899999469053,
+        0.0017344000007142313,
+        0.001725300000543939,
+        0.0016915999985940289,
+        0.001702800000202842
+      ],
+      "input_codepoints": 1048577,
+      "memory": {
+        "WorkingSetSize": 24952832,
+        "PeakWorkingSetSize": 25939968,
+        "PrivateUsage": 16162816,
+        "PeakPagefileUsage": 17268736
+      }
+    }
+  ],
+  "memory": [
+    {
+      "count": 1,
+      "per_pattern_max_mem": 8388608,
+      "before": {
+        "WorkingSetSize": 23834624,
+        "PeakWorkingSetSize": 23834624,
+        "PrivateUsage": 15073280,
+        "PeakPagefileUsage": 15073280
+      },
+      "after": {
+        "WorkingSetSize": 24014848,
+        "PeakWorkingSetSize": 24014848,
+        "PrivateUsage": 15208448,
+        "PeakPagefileUsage": 15208448
+      }
+    },
+    {
+      "count": 10,
+      "per_pattern_max_mem": 8388608,
+      "before": {
+        "WorkingSetSize": 23998464,
+        "PeakWorkingSetSize": 23998464,
+        "PrivateUsage": 15257600,
+        "PeakPagefileUsage": 15257600
+      },
+      "after": {
+        "WorkingSetSize": 25669632,
+        "PeakWorkingSetSize": 25669632,
+        "PrivateUsage": 17031168,
+        "PeakPagefileUsage": 17031168
+      }
+    },
+    {
+      "count": 100,
+      "per_pattern_max_mem": 8388608,
+      "before": {
+        "WorkingSetSize": 23814144,
+        "PeakWorkingSetSize": 23814144,
+        "PrivateUsage": 15069184,
+        "PeakPagefileUsage": 15069184
+      },
+      "after": {
+        "WorkingSetSize": 41517056,
+        "PeakWorkingSetSize": 41517056,
+        "PrivateUsage": 33988608,
+        "PeakPagefileUsage": 33988608
+      }
+    }
+  ],
+  "cancellation": [
+    {
+      "ready": true,
+      "memory": {
+        "WorkingSetSize": 28151808,
+        "PeakWorkingSetSize": 32284672,
+        "PrivateUsage": 19464192,
+        "PeakPagefileUsage": 23711744
+      },
+      "terminate_join_seconds": 0.003560100001777755,
+      "exitcode": -15,
+      "alive_after_join": false
+    },
+    {
+      "ready": true,
+      "memory": {
+        "WorkingSetSize": 28180480,
+        "PeakWorkingSetSize": 32313344,
+        "PrivateUsage": 19431424,
+        "PeakPagefileUsage": 23650304
+      },
+      "terminate_join_seconds": 0.0082356000020809,
+      "exitcode": -15,
+      "alive_after_join": false
+    },
+    {
+      "ready": true,
+      "memory": {
+        "WorkingSetSize": 28082176,
+        "PeakWorkingSetSize": 32215040,
+        "PrivateUsage": 19365888,
+        "PeakPagefileUsage": 23605248
+      },
+      "terminate_join_seconds": 0.003429899999900954,
+      "exitcode": -15,
+      "alive_after_join": false
+    }
+  ],
+  "traditional_engine_comparison": [
+    {
+      "ready": true,
+      "engine": "Python re isolated comparison",
+      "pattern": "(a+)+$",
+      "input_codepoints": 4097,
+      "terminate_join_seconds": 0.005525500000658212,
+      "exitcode": -15,
+      "alive_after_join": false
+    },
+    {
+      "ready": true,
+      "engine": "Python re isolated comparison",
+      "pattern": "(a|aa)+$",
+      "input_codepoints": 4097,
+      "terminate_join_seconds": 0.0034996000031242147,
+      "exitcode": -15,
+      "alive_after_join": false
+    }
+  ],
+  "summary": {
+    "semantic_cases": 30,
+    "compile_rejections": 10,
+    "budget_probes": 12,
+    "adversarial_cases": 6,
+    "memory_processes": 3,
+    "terminated_processes": 3,
+    "traditional_comparisons_killed": 2,
+    "status": "PASS",
+    "note": "Feasibility only; no product dialect validator, worker scheduler or hard OS memory limit implemented."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "note": "Đáp án viết trước kiểm tra; chỉ một rule date_format đang bật, không required. Dùng dataset UI thử riêng, không sửa demo44. Chuỗi ở bản ghi11 là một trường rỗng được quote.",
+  "columns": ["event_date"],
+  "rows": [["2026-12-31"],["31/12/2026"],["12/31/2026"],["01/02/2026"],["13/02/2026"],["02/13/2026"],["29/02/2000"],["02/29/1900"],["2023-02-29"],[" 2026-01-01 "],[""],["2024-02-29"]],
+  "ambiguous_record4": {"original":"01/02/2026","DD/MM/YYYY":"Ngày 1 tháng 2 năm 2026","MM/DD/YYYY":"Ngày 2 tháng 1 năm 2026","note":"Đều đạt theo format đã chọn, không chuyển đổi giá trị gốc. Bản ghi5/6 giúp phân biệt hai cách hiểu."},
+  "formats": {
+    "YYYY-MM-DD": {
+      "statistics":{"total_rows":12,"error_row_count":9,"violation_count":9,"error_row_rate":"75.0000"},
+      "DATE_FORMAT_MISMATCH":[2,3,4,5,6,7,8,10],
+      "DATE_VALUE_INVALID":[9],
+      "valid_records":[1,12],"missing_records":[11]
+    },
+    "DD/MM/YYYY": {
+      "statistics":{"total_rows":12,"error_row_count":7,"violation_count":7,"error_row_rate":"58.3333"},
+      "DATE_FORMAT_MISMATCH":[1,9,10,12],
+      "DATE_VALUE_INVALID":[3,6,8],
+      "valid_records":[2,4,5,7],"missing_records":[11]
+    },
+    "MM/DD/YYYY": {
+      "statistics":{"total_rows":12,"error_row_count":8,"violation_count":8,"error_row_rate":"66.6667"},
+      "DATE_FORMAT_MISMATCH":[1,9,10,12],
+      "DATE_VALUE_INVALID":[2,5,7,8],
+      "valid_records":[3,4,6],"missing_records":[11]
+    }
+  }
+}

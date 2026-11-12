@@ -1,0 +1,255 @@
+{
+  "report_schema_version": "1",
+  "exported_at": "2026-10-18T06:40:35.254221+00:00",
+  "dataset_metadata_source": "current_at_export",
+  "dataset_metadata_note": "Metadata bộ dữ liệu hiện tại khi xuất, không phải snapshot tại thời điểm chạy.",
+  "dataset": {
+    "id": 42,
+    "name": "QT-01A Data Type Demo",
+    "description": "QT-01A: 10 rows, 4 error rows, 11 violations, 40.0000%; original strings preserved.",
+    "source": "samples/data_type_qt01a.csv",
+    "owner": "QT-01A verification"
+  },
+  "version": {
+    "id": 46,
+    "version_number": 1,
+    "original_filename": "data_type_qt01a.csv",
+    "row_count": 10,
+    "imported_at": "2026-10-18T06:40:34.357223+00:00"
+  },
+  "run": {
+    "id": 28,
+    "status": "completed",
+    "started_at": "2026-10-18T06:40:34.775148+00:00",
+    "finished_at": "2026-10-18T06:40:34.811193+00:00",
+    "engine_version": "quality-v2",
+    "total_rows": 10,
+    "error_row_count": 4,
+    "violation_count": 11,
+    "error_row_rate": "40.0000"
+  },
+  "rule_snapshot": [
+    {
+      "id": 25,
+      "name": "integer spelling",
+      "config": {
+        "type": "integer"
+      },
+      "columns": [
+        "integer_value"
+      ],
+      "rule_type": "data_type"
+    },
+    {
+      "id": 26,
+      "name": "decimal spelling",
+      "config": {
+        "type": "decimal"
+      },
+      "columns": [
+        "decimal_value"
+      ],
+      "rule_type": "data_type"
+    },
+    {
+      "id": 27,
+      "name": "boolean spelling",
+      "config": {
+        "type": "boolean"
+      },
+      "columns": [
+        "boolean_value"
+      ],
+      "rule_type": "data_type"
+    }
+  ],
+  "violations": [
+    {
+      "id": 87,
+      "run_id": 28,
+      "rule_id_snapshot": 25,
+      "rule_type": "data_type",
+      "rule_order": 1,
+      "row_number": 4,
+      "columns": [
+        "integer_value"
+      ],
+      "values": [
+        "1.0"
+      ],
+      "error_code": "DATA_TYPE_INTEGER_INVALID",
+      "message": "Giá trị phải là số nguyên ASCII, không có khoảng trắng ngoài.",
+      "rule_name": "integer spelling"
+    },
+    {
+      "id": 88,
+      "run_id": 28,
+      "rule_id_snapshot": 27,
+      "rule_type": "data_type",
+      "rule_order": 3,
+      "row_number": 4,
+      "columns": [
+        "boolean_value"
+      ],
+      "values": [
+        "TRUE"
+      ],
+      "error_code": "DATA_TYPE_BOOLEAN_INVALID",
+      "message": "Giá trị phải là true hoặc false viết thường, không có khoảng trắng ngoài.",
+      "rule_name": "boolean spelling"
+    },
+    {
+      "id": 89,
+      "run_id": 28,
+      "rule_id_snapshot": 25,
+      "rule_type": "data_type",
+      "rule_order": 1,
+      "row_number": 5,
+      "columns": [
+        "integer_value"
+      ],
+      "values": [
+        "1e3"
+      ],
+      "error_code": "DATA_TYPE_INTEGER_INVALID",
+      "message": "Giá trị phải là số nguyên ASCII, không có khoảng trắng ngoài.",
+      "rule_name": "integer spelling"
+    },
+    {
+      "id": 90,
+      "run_id": 28,
+      "rule_id_snapshot": 26,
+      "rule_type": "data_type",
+      "rule_order": 2,
+      "row_number": 5,
+      "columns": [
+        "decimal_value"
+      ],
+      "values": [
+        "NaN"
+      ],
+      "error_code": "DATA_TYPE_DECIMAL_INVALID",
+      "message": "Giá trị phải là số thập phân hữu hạn theo cú pháp được hỗ trợ, không có khoảng trắng ngoài.",
+      "rule_name": "decimal spelling"
+    },
+    {
+      "id": 91,
+      "run_id": 28,
+      "rule_id_snapshot": 27,
+      "rule_type": "data_type",
+      "rule_order": 3,
+      "row_number": 5,
+      "columns": [
+        "boolean_value"
+      ],
+      "values": [
+        "1"
+      ],
+      "error_code": "DATA_TYPE_BOOLEAN_INVALID",
+      "message": "Giá trị phải là true hoặc false viết thường, không có khoảng trắng ngoài.",
+      "rule_name": "boolean spelling"
+    },
+    {
+      "id": 92,
+      "run_id": 28,
+      "rule_id_snapshot": 25,
+      "rule_type": "data_type",
+      "rule_order": 1,
+      "row_number": 6,
+      "columns": [
+        "integer_value"
+      ],
+      "values": [
+        " 1 "
+      ],
+      "error_code": "DATA_TYPE_INTEGER_INVALID",
+      "message": "Giá trị phải là số nguyên ASCII, không có khoảng trắng ngoài.",
+      "rule_name": "integer spelling"
+    },
+    {
+      "id": 93,
+      "run_id": 28,
+      "rule_id_snapshot": 26,
+      "rule_type": "data_type",
+      "rule_order": 2,
+      "row_number": 6,
+      "columns": [
+        "decimal_value"
+      ],
+      "values": [
+        "1,2"
+      ],
+      "error_code": "DATA_TYPE_DECIMAL_INVALID",
+      "message": "Giá trị phải là số thập phân hữu hạn theo cú pháp được hỗ trợ, không có khoảng trắng ngoài.",
+      "rule_name": "decimal spelling"
+    },
+    {
+      "id": 94,
+      "run_id": 28,
+      "rule_id_snapshot": 27,
+      "rule_type": "data_type",
+      "rule_order": 3,
+      "row_number": 6,
+      "columns": [
+        "boolean_value"
+      ],
+      "values": [
+        " false "
+      ],
+      "error_code": "DATA_TYPE_BOOLEAN_INVALID",
+      "message": "Giá trị phải là true hoặc false viết thường, không có khoảng trắng ngoài.",
+      "rule_name": "boolean spelling"
+    },
+    {
+      "id": 95,
+      "run_id": 28,
+      "rule_id_snapshot": 25,
+      "rule_type": "data_type",
+      "rule_order": 1,
+      "row_number": 8,
+      "columns": [
+        "integer_value"
+      ],
+      "values": [
+        "１２"
+      ],
+      "error_code": "DATA_TYPE_INTEGER_INVALID",
+      "message": "Giá trị phải là số nguyên ASCII, không có khoảng trắng ngoài.",
+      "rule_name": "integer spelling"
+    },
+    {
+      "id": 96,
+      "run_id": 28,
+      "rule_id_snapshot": 26,
+      "rule_type": "data_type",
+      "rule_order": 2,
+      "row_number": 8,
+      "columns": [
+        "decimal_value"
+      ],
+      "values": [
+        "1_000"
+      ],
+      "error_code": "DATA_TYPE_DECIMAL_INVALID",
+      "message": "Giá trị phải là số thập phân hữu hạn theo cú pháp được hỗ trợ, không có khoảng trắng ngoài.",
+      "rule_name": "decimal spelling"
+    },
+    {
+      "id": 97,
+      "run_id": 28,
+      "rule_id_snapshot": 27,
+      "rule_type": "data_type",
+      "rule_order": 3,
+      "row_number": 8,
+      "columns": [
+        "boolean_value"
+      ],
+      "values": [
+        "NULL"
+      ],
+      "error_code": "DATA_TYPE_BOOLEAN_INVALID",
+      "message": "Giá trị phải là true hoặc false viết thường, không có khoảng trắng ngoài.",
+      "rule_name": "boolean spelling"
+    }
+  ]
+}

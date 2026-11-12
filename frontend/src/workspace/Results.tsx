@@ -1,0 +1,50 @@
+import {supplierLabel} from './Suppliers'
+import { batchHref, historyHref, comparisonHref } from './scopeNavigation'
+import ViolationList from './Violations'
+import UploadDialog from './UploadDialog'
+import { getBatch } from '../api/datasets'
+import { useEffect, useRef, useState } from 'react'
+import { ArrowLeft, FileCheck2, FileSpreadsheet, Upload } from 'lucide-react'
+import { fetchQualitySummary } from '../api/runs'
+import { getRun } from './api'
+import type { CatalogEntry } from './api'
+import { ruleDescription } from './EditDialogs'
+import { batchText, percent } from './presentation'
+import { Badge, Button, Empty, ExecutionBadge, LoadState, Notice, PageTitle, Pager, QualityBadge, date, number, ruleLabels, useLoad } from './ui'
+
+export default function Results({ dataset, runId, upload, retry, changed, userRole }: { dataset: CatalogEntry; runId: number; upload: () => void; retry: (version: number) => void; changed: () => void;userRole?:string }) {
+  const run = useLoad(signal => getRun(dataset.id, runId, signal), [dataset.id, runId])
+  const [uploading,setUploading] = useState(false)
+  const uploadSaved=useRef(false)
+  const batch = useLoad(signal => run.data?.batch_id ? getBatch(dataset.id,run.data.batch_id,signal) : Promise.resolve(null),[dataset.id,run.data?.batch_id])
+  const [tab, setTab] = useState('errors')
+  const hasRefreshed = useRef(false)
+  useEffect(() => {
+    if (run.data?.status === 'running') { const timer = window.setTimeout(run.reload, 2000); return () => clearTimeout(timer) }
+    if (run.data && !hasRefreshed.current && !dataset.runs.some(item => item.run_id === runId && item.status === run.data?.status)) { hasRefreshed.current = true; changed() }
+  }, [run.data])
+  const version = dataset.versions.find(item => item.id === run.data?.version_id)
+  const count = run.data?.total_rows
+  const valid = count == null || run.data?.error_row_count == null ? null : count - run.data.error_row_count
+  const rate = count && valid != null ? percent(valid / count * 100) : '—'
+  return <>{uploading && batch.data && <UploadDialog dataset={dataset} batch={batch.data} onClose={()=>{setUploading(false);if(uploadSaved.current){uploadSaved.current=false;changed()}}} onSaved={()=>{uploadSaved.current=true}} next={(_id,tab,_batch,version)=>{if(tab==='run'&&version)retry(version);else location.hash=`/datasets/${dataset.id}/batches/${batch.data!.id}${tab==='rules'?'?rules=1':''}`}}/>}{run.data?.batch_id && <nav className="scope-actions" aria-label="Điều hướng trong đợt"><a className="button button-secondary" href={batchHref(dataset.id,run.data.batch_id)}><ArrowLeft size={16}/>Về đợt dữ liệu</a><a href={historyHref(dataset.id,run.data.batch_id)}>Lịch sử kiểm tra của đợt</a><a href={comparisonHref(dataset.id,String(run.data.batch_id))}>Đối chiếu trong đợt</a><a href={historyHref(dataset.id)}>Lịch sử tất cả đợt</a><a href={`#/datasets/${dataset.id}/batches/${run.data.batch_id}?issues=1`}>Xử lý lỗi của đợt</a></nav>}<PageTitle eyebrow={`LẦN KIỂM TRA #${runId}`} title="Kết quả kiểm tra" description={`${dataset.name} / ${batchText(batch.data)}${run.data ? ` / v${run.data.version_number}` : ''}`} action={<Button disabled={!batch.data||batch.data.business_state==='COMPLETED'} onClick={() => setUploading(true)}><Upload size={17} />Tải lên bản đã sửa</Button>} /><LoadState loading={run.loading} error={run.error} retry={run.reload} />
+    {run.data && <><p className="helper-text" data-run-supplier>Nguồn của lần kiểm tra (snapshot): {supplierLabel(run.data.supplier)}</p><div className="result-context"><div><FileSpreadsheet size={21} /><strong>{version?.original_filename ?? 'File của phiên bản đã kiểm tra'}</strong></div><span>{date(run.data.started_at)}</span><span>{batchText(batch.data)} · v{run.data.version_number} · {run.data.is_current?'Bản hiện hành':'Bản lịch sử'}</span><ExecutionBadge status={run.data.status} /><QualityBadge run={run.data} /></div>
+      {run.data.rules_changed && <Notice kind="warning">Quy tắc đã thay đổi từ lần kiểm tra này. Hãy kiểm tra lại với quy tắc hiện tại; kết quả cũ vẫn được giữ nguyên.</Notice>}<details className="panel panel-pad"><summary>Chi tiết cấu hình đã sử dụng</summary><p>Phiên bản cấu hình lúc chạy: {run.data.batch_rules_revision??'Lịch sử chưa ghi nhận'}. Hiện tại: {run.data.current_rules_revision}.</p><p>Bộ kiểm tra: {run.data.engine_version}</p></details>{run.data.status === 'running' && <Notice>Máy chủ đang xử lý. Kết quả được cập nhật tự động; không cần chạy lại.</Notice>}
+      {run.data.status === 'failed' && <Notice kind="error">{run.data.failure_message || 'Lần kiểm tra thực thi thất bại, chưa có kết luận chất lượng.'}<div className="button-row"><a href={`#/datasets/${dataset.id}/batches/${run.data.batch_id}`}>Xem lại quy tắc của đợt</a><Button onClick={() => { if (window.confirm('Tạo lần kiểm tra mới cho phiên bản này? Kết quả thất bại cũ vẫn được giữ lại.')) retry(run.data!.version_id) }}>Thử lại bằng lần kiểm tra mới</Button></div></Notice>}
+      {run.data.status === 'completed' && <><div className="result-stats"><ResultStat label="Tổng bản ghi" value={number(count)} /><ResultStat label="Bản ghi có lỗi" value={number(run.data.error_row_count)} tone="danger" /><ResultStat label="Bản ghi không vi phạm" value={number(valid)} tone="success" /><ResultStat label="Tỷ lệ không vi phạm" value={rate} tone="primary" /><ResultStat label="Lượt vi phạm quy tắc" value={number(run.data.violation_count)} /></div><p className="helper-text">Một bản ghi có thể vi phạm nhiều quy tắc. Tỷ lệ không vi phạm = (tổng bản ghi − bản ghi có lỗi) / tổng bản ghi × 100%.</p></>}
+      <div className="tabs" role="tablist" aria-label="Chi tiết kết quả">{[['errors', 'Danh sách lỗi'], ['rules', `Quy tắc đã áp dụng (${run.data.rule_snapshot.length})`], ['summary', 'Phân tích chất lượng']].map(([value, text]) => <button key={value} role="tab" aria-selected={tab === value} className={tab === value ? 'active' : ''} onClick={() => setTab(value)}>{text}</button>)}</div>
+      {tab === 'rules' && <section className="panel"><div className="panel-heading"><h2>Quy tắc tại thời điểm chạy</h2><Badge tone="primary">Đã lưu cùng kết quả</Badge></div><div className="table-scroll"><table><thead><tr><th>Tên quy tắc</th><th>Loại kiểm tra</th><th>Trường</th><th>Cấu hình</th></tr></thead><tbody>{run.data.rule_snapshot.map(rule => <tr key={rule.id}><td><strong>{rule.name}</strong></td><td>{ruleLabels[rule.rule_type] ?? rule.rule_type}</td><td>{rule.columns.join(', ')}</td><td className="wrap-cell">{ruleDescription(rule as Parameters<typeof ruleDescription>[0])}</td></tr>)}</tbody></table></div></section>}
+      {tab === 'errors' && run.data.status === 'completed' && <ViolationList key={runId} dataset={dataset} run={run.data} userRole={userRole} />}
+      {tab === 'summary' && run.data.status === 'completed' && <Breakdown dataset={dataset.id} run={runId} />}
+      {tab !== 'rules' && run.data.status !== 'completed' && <Empty text="Bảng kết quả sẽ có khi lần kiểm tra hoàn tất." />}
+      <div className="notice-footnote"><FileCheck2 size={18} /><p>Kết quả phản ánh các quy tắc đã áp dụng, không thay thế việc xác nhận tính chính xác nghiệp vụ. Dữ liệu nguồn không được tự động sửa.</p></div>
+    </>}
+  </>
+}
+function ResultStat({ label, value, tone = '' }: { label: string; value: string; tone?: string }) { return <div className={`result-stat text-${tone}`}><span>{label}</span><strong>{value}</strong></div> }
+function Breakdown({ dataset, run }: { dataset: number; run: number }) {
+  const [rulePage, setRulePage] = useState(1)
+  const [columnPage, setColumnPage] = useState(1)
+  const summary = useLoad(signal => fetchQualitySummary(dataset, run, rulePage, columnPage, signal), [dataset, run, rulePage, columnPage])
+  return <section className="panel"><div className="panel-heading"><h2>Phân tích vi phạm đã lưu</h2></div><LoadState loading={summary.loading} error={summary.error} retry={summary.reload} />{summary.data && <><div className="dimension-grid">{summary.data.dimensions.map(item => <div key={item.dimension}><span>{item.label}</span><strong>{number(item.violation_count)}</strong><small>{item.assessment_status === 'not_assessed' ? 'Chưa thiết lập quy tắc' : `${number(item.violating_row_count)} bản ghi bị ảnh hưởng`}</small></div>)}</div><div className="table-scroll"><table><thead><tr><th>Quy tắc</th><th>Trường áp dụng</th><th>Lượt vi phạm</th><th>Bản ghi bị ảnh hưởng</th></tr></thead><tbody>{summary.data.rules.items.map(item => <tr key={item.rule_id_snapshot}><td>{item.name}</td><td>{item.columns.join(' + ')}</td><td>{number(item.violation_count)}</td><td>{number(item.violating_row_count)}</td></tr>)}</tbody></table></div><Pager page={rulePage} total={summary.data.rules.total} size={20} change={setRulePage} /><div className="table-scroll"><table><thead><tr><th>Cột / nhóm cột</th><th>Lượt vi phạm</th><th>Bản ghi bị ảnh hưởng</th></tr></thead><tbody>{summary.data.column_scopes.items.map(item => <tr key={JSON.stringify(item.columns)}><td>{item.columns.join(' + ')}</td><td>{number(item.violation_count)}</td><td>{number(item.violating_row_count)}</td></tr>)}</tbody></table></div><Pager page={columnPage} total={summary.data.column_scopes.total} size={20} change={setColumnPage} /><p className="helper-text panel-pad">Không cộng số bản ghi giữa các nhóm vì một bản ghi có thể thuộc nhiều nhóm. Chỉ tính tỷ lệ cho toàn bộ lần kiểm tra.</p><details className="insight-details trace-context"><summary>Thông tin truy vết lần kiểm tra</summary><dl><div><dt>Bộ dữ liệu / phiên bản</dt><dd>#{summary.data.context.dataset_id} / v{summary.data.context.version_number} (#{summary.data.context.version_id})</dd></div><div><dt>Lần kiểm tra</dt><dd>#{summary.data.context.run_id} · {date(summary.data.context.started_at)}</dd></div><div><dt>Bộ kiểm tra</dt><dd>{summary.data.context.engine_version}</dd></div><div><dt>Dấu nhận diện cấu hình</dt><dd><code>{summary.data.context.rule_set_fingerprint}</code></dd></div><div><dt>Nguồn quy tắc</dt><dd>Cấu hình đã lưu tại thời điểm chạy</dd></div></dl></details></>}</section>
+}

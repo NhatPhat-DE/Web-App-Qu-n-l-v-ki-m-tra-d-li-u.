@@ -1,0 +1,56 @@
+{
+  "dataset_id": 46,
+  "version_id": 50,
+  "run_id": 38,
+  "client_requests": "7 GET only, restricted to dataset46",
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 5,
+    "violation_count": 5,
+    "error_row_rate": "50.0000"
+  },
+  "error_records": [
+    4,
+    5,
+    6,
+    9,
+    10
+  ],
+  "missing_records": [
+    7,
+    8
+  ],
+  "business_tables_before_after_identical": true,
+  "business_checksums": {
+    "datasets": {
+      "count": 18,
+      "sha256": "cc17043bfeb047cecccaf1078f104e68a2b8c856500edb2689b4cae46f1773fb"
+    },
+    "dataset_columns": {
+      "count": 76,
+      "sha256": "e506e3b0ef943d666d7614df7f564b3850b644471f30662ade72a6baf79016c0"
+    },
+    "dataset_versions": {
+      "count": 22,
+      "sha256": "633d7335747b68cd0e3d2912674c845e3fb55dd13a8873779c52bd369e18909e"
+    },
+    "dataset_rows": {
+      "count": 230,
+      "sha256": "d877216256d979857ad15b8fe3cccafb56bef0767e343b87ac1fd0a1bc279722"
+    },
+    "quality_rules": {
+      "count": 33,
+      "sha256": "c93fbbc91daf277aa218b1762a7c25bb6b6706d75d111a80ae8aaf66436c3e1c"
+    },
+    "quality_runs": {
+      "count": 38,
+      "sha256": "c8807fd5215998ee188a28b1d5741f9ab23ec8fe8018a1d91cf6a46226c986c6"
+    },
+    "quality_violations": {
+      "count": 169,
+      "sha256": "cefe5b663eafa295543ec75300b3818729a7c60c977885d4e3ea0bf2d170f4ea"
+    }
+  },
+  "temporary_session_revoked": true,
+  "browser_acceptance": false
+}

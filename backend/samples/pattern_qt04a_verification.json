@@ -1,0 +1,51 @@
+{
+  "dataset_name": "QT-04A Pattern RE2 Demo",
+  "dataset_id": 48,
+  "version_id": 52,
+  "rule_id": 35,
+  "run_id": 41,
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 7,
+    "violation_count": 7,
+    "error_row_rate": "70.0000"
+  },
+  "error_rows": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "snapshot": [
+    {
+      "id": 35,
+      "name": "Product code SP + four ASCII digits",
+      "rule_type": "pattern",
+      "columns": [
+        "product_code"
+      ],
+      "config": {
+        "dialect": "re2-v1",
+        "pattern": "SP[0-9]{4}"
+      }
+    }
+  ],
+  "fingerprint": "rules-v2:9e5fc9b184cd1542e2ff8922943911421a7368326afcfe5b9900dbeec71ce2f0",
+  "parser_raw_preserved": true,
+  "history_violations_json_xlsx_verified": true,
+  "xlsx_verified_by": "stdlib ZIP/XML reader, all cells text; not manual Excel/LibreOffice",
+  "old_business_row_checksums": {
+    "datasets": "28261e81905063054551cea3ed6a1274d1ffa6b0a4f2934473a5d44d3f0e14c6",
+    "dataset_columns": "c41cd98b9fd2edf7dddf02c39ed8807b2fada2f8e1f2e3d526b64b599f44a7b1",
+    "dataset_versions": "a0a2be60892d3759803cc6512ca5a5ab30c25f0e7d869fb23a83cf3b1cbc448c",
+    "dataset_rows": "fd0dd6a1e4b765a7b72eac5450cff2a85ca9290f2516bef9acad2f6d211ab59e",
+    "quality_rules": "73d933e669686bc048889d80d1a617e4026d1262459e0761b18d2c857a4a4fa3",
+    "quality_runs": "d5cff3d457424a628542cf1e8779eb934d330779fdbcdac1ed5ad0bb93d90de3",
+    "quality_violations": "c3237e09a595927db076cb00aeb6dc54f97ec6271bc1ed0f5cc245b1d92ba483"
+  },
+  "old_fingerprints_unchanged": true,
+  "session_revoked_in_finally": true
+}

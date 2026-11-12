@@ -1,0 +1,3288 @@
+{
+  "kind": "Automated local Chromium screenshots and DOM measurements; not manual browser acceptance",
+  "recorded_at": "2026-10-19T16:54:19.802Z",
+  "browser": "chrome.exe",
+  "dataset_id": 28,
+  "run_id": 2,
+  "origin": "http://127.0.0.1:5173",
+  "layouts": [
+    {
+      "label": "laptop-overview",
+      "screenshot": "ux03a-laptop-overview.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scroll_y": 0,
+      "document_width": 1351,
+      "body_width": 1351,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Tổng quan",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1351,
+        "height": 69,
+        "bottom": 69
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "sticky",
+          "top": "77px",
+          "x": 67.546875,
+          "y": 101,
+          "width": 1215.890625,
+          "height": 78.765625,
+          "bottom": 179.765625
+        }
+      ],
+      "table_scrollers": [],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "27.32px",
+            "line_height": "32.784px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Lần chạy #45 · Phiên bản 2 · 22:28 19 thg 10, 2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Kết quả đã lưu theo snapshot của lần chạy này; không tự cập nhật theo quy tắc hiện tại.",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Sửa thông tin",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Mở kết quả lần #45",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Phiên bản đang chọn",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Cấu trúc bộ dữ liệu",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Áp dụng chung cho các phiên bản",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "laptop-data",
+      "screenshot": "ux03a-laptop-data.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scroll_y": 0,
+      "document_width": 1351,
+      "body_width": 1351,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Dữ liệu và cấu trúc",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1351,
+        "height": 69,
+        "bottom": 69
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "sticky",
+          "top": "77px",
+          "x": 67.546875,
+          "y": 101,
+          "width": 1215.890625,
+          "height": 78.765625,
+          "bottom": 179.765625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 1212,
+          "scroll_width": 1212,
+          "overflow_x": "auto",
+          "x": 68.546875,
+          "y": 514.953125,
+          "width": 1213.890625,
+          "height": 233,
+          "bottom": 747.953125
+        },
+        {
+          "client_width": 1212,
+          "scroll_width": 1212,
+          "overflow_x": "auto",
+          "x": 68.546875,
+          "y": 929.453125,
+          "width": 1213.890625,
+          "height": 256,
+          "bottom": 1185.453125
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "27.32px",
+            "line_height": "32.784px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Ký hiệu ∅ chỉ chuỗi rỗng; dữ liệu gốc không bị thay đổi. Khoảng trắng và xuống dòng được g",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Kiểu được suy luận từ dữ liệu, chỉ là gợi ý; dữ liệu gốc không thay đổi.",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Chưa cung cấp",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "Chưa cung cấp",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Sửa mô tả",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Sửa mô tả",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "amount",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "FIX001",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "100",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "2",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "001",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "0",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "3",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "日本語",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "0",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Phiên bản đang chọn",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Cấu trúc bộ dữ liệu",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Áp dụng chung cho các phiên bản",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Ký hiệu ∅ chỉ chuỗi rỗng; dữ liệu gốc không bị thay đổi. Khoảng trắng và xuống dòng được g",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Kiểu được suy luận từ dữ liệu, chỉ là gợi ý; dữ liệu gốc không thay đổi.",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "laptop-rules",
+      "screenshot": "ux03a-laptop-rules.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scroll_y": 0,
+      "document_width": 1351,
+      "body_width": 1351,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Quy tắc",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1351,
+        "height": 69,
+        "bottom": 69
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "sticky",
+          "top": "77px",
+          "x": 67.546875,
+          "y": 101,
+          "width": 1215.890625,
+          "height": 78.765625,
+          "bottom": 179.765625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 1212,
+          "scroll_width": 1212,
+          "overflow_x": "auto",
+          "x": 68.546875,
+          "y": 564.453125,
+          "width": 1213.890625,
+          "height": 186,
+          "bottom": 750.453125
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "27.32px",
+            "line_height": "32.784px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Quy tắc thuộc bộ dữ liệu, áp dụng chung cho các phiên bản; không phải quy tắc riêng của ph",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng số quy tắc: 2",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tạo quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "AI gợi ý quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Tên",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Loại",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cấu hình",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Trạng thái",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Thao tác",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code required",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Bắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trịChi tiết kỹ thuậtrequired{}",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Đang bật",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Phiên bản đang chọn",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Cấu trúc bộ dữ liệu",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Áp dụng chung cho các phiên bản",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Quy tắc thuộc bộ dữ liệu, áp dụng chung cho các phiên bản; không phải quy tắc riêng của ph",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng số quy tắc: 2",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "laptop-runs",
+      "screenshot": "ux03a-laptop-runs.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scroll_y": 0,
+      "document_width": 1351,
+      "body_width": 1351,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Kết quả kiểm tra",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1351,
+        "height": 69,
+        "bottom": 69
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "sticky",
+          "top": "77px",
+          "x": 67.546875,
+          "y": 101,
+          "width": 1215.890625,
+          "height": 78.765625,
+          "bottom": 179.765625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 1176,
+          "scroll_width": 1176,
+          "overflow_x": "auto",
+          "x": 86.546875,
+          "y": 1429.453125,
+          "width": 1177.890625,
+          "height": 257,
+          "bottom": 1686.453125
+        },
+        {
+          "client_width": 1176,
+          "scroll_width": 1176,
+          "overflow_x": "auto",
+          "x": 86.546875,
+          "y": 1997.953125,
+          "width": 1177.890625,
+          "height": 824,
+          "bottom": 2821.953125
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "27.32px",
+            "line_height": "32.784px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Hoàn tất — phiên bản 1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Đây là kết quả đã lưu của phiên bản 1, không phải kết quả tự cập nhật theo phiên bản đang ",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Bắt đầu: 16:55:04 14/10/2026; kết thúc: 16:55:05 14/10/2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Một bản ghi có thể có nhiều vi phạm.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Theo các quy tắc đã áp dụng. Đây là kết quả, không phải tiến độ quét.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Engine: quality-v1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tỷ lệ lỗi đã lưu: 50.0000%",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "∅: chuỗi rỗng; ⟨null⟩: null. Khoảng trắng và xuống dòng giữ nguyên.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng lỗi phù hợp bộ lọc: 3",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Xuất báo cáo",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Lọc bản ghi",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Đối chiếu hai lần chạy",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Quy tắc",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giá trị lỗi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Điều kiện đã áp dụng",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giải thích",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code requiredBắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "∅Giá trị nguyên bản (JSON)[\"\"]",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Giá trị bắt buộc đang thiếu.Mã lỗi kỹ thuậtREQUIRED_MISSING",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Phiên bản đang chọn",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Cấu trúc bộ dữ liệu",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Áp dụng chung cho các phiên bản",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "laptop-runs-scrolled",
+      "screenshot": "ux03a-laptop-runs-scrolled.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scroll_y": 247,
+      "document_width": 1351,
+      "body_width": 1351,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Kết quả kiểm tra",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1351,
+        "height": 69,
+        "bottom": 69
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "sticky",
+          "top": "77px",
+          "x": 67.546875,
+          "y": 77,
+          "width": 1215.890625,
+          "height": 78.765625,
+          "bottom": 155.765625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 1176,
+          "scroll_width": 1176,
+          "overflow_x": "auto",
+          "x": 86.546875,
+          "y": 1182.453125,
+          "width": 1177.890625,
+          "height": 257,
+          "bottom": 1439.453125
+        },
+        {
+          "client_width": 1176,
+          "scroll_width": 1176,
+          "overflow_x": "auto",
+          "x": 86.546875,
+          "y": 1750.953125,
+          "width": 1177.890625,
+          "height": 824,
+          "bottom": 2574.953125
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "27.32px",
+            "line_height": "32.784px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Hoàn tất — phiên bản 1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Đây là kết quả đã lưu của phiên bản 1, không phải kết quả tự cập nhật theo phiên bản đang ",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Bắt đầu: 16:55:04 14/10/2026; kết thúc: 16:55:05 14/10/2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Một bản ghi có thể có nhiều vi phạm.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Theo các quy tắc đã áp dụng. Đây là kết quả, không phải tiến độ quét.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Engine: quality-v1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tỷ lệ lỗi đã lưu: 50.0000%",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "∅: chuỗi rỗng; ⟨null⟩: null. Khoảng trắng và xuống dòng giữ nguyên.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng lỗi phù hợp bộ lọc: 3",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Xuất báo cáo",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Lọc bản ghi",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Đối chiếu hai lần chạy",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Quy tắc",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giá trị lỗi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Điều kiện đã áp dụng",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giải thích",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code requiredBắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "∅Giá trị nguyên bản (JSON)[\"\"]",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Giá trị bắt buộc đang thiếu.Mã lỗi kỹ thuậtREQUIRED_MISSING",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Phiên bản đang chọn",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Cấu trúc bộ dữ liệu",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Áp dụng chung cho các phiên bản",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "laptop-runs-violations",
+      "screenshot": "ux03a-laptop-runs-violations.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scroll_y": 1259,
+      "document_width": 1351,
+      "body_width": 1351,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Kết quả kiểm tra",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1351,
+        "height": 69,
+        "bottom": 69
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "sticky",
+          "top": "77px",
+          "x": 67.546875,
+          "y": 77,
+          "width": 1215.890625,
+          "height": 78.765625,
+          "bottom": 155.765625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 1176,
+          "scroll_width": 1176,
+          "overflow_x": "auto",
+          "x": 86.546875,
+          "y": 170.453125,
+          "width": 1177.890625,
+          "height": 257,
+          "bottom": 427.453125
+        },
+        {
+          "client_width": 1176,
+          "scroll_width": 1176,
+          "overflow_x": "auto",
+          "x": 86.546875,
+          "y": 738.953125,
+          "width": 1177.890625,
+          "height": 824,
+          "bottom": 1562.953125
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "27.32px",
+            "line_height": "32.784px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Hoàn tất — phiên bản 1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Đây là kết quả đã lưu của phiên bản 1, không phải kết quả tự cập nhật theo phiên bản đang ",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Bắt đầu: 16:55:04 14/10/2026; kết thúc: 16:55:05 14/10/2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Một bản ghi có thể có nhiều vi phạm.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Theo các quy tắc đã áp dụng. Đây là kết quả, không phải tiến độ quét.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Engine: quality-v1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tỷ lệ lỗi đã lưu: 50.0000%",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "∅: chuỗi rỗng; ⟨null⟩: null. Khoảng trắng và xuống dòng giữ nguyên.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng lỗi phù hợp bộ lọc: 3",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Xuất báo cáo",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Lọc bản ghi",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Đối chiếu hai lần chạy",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Quy tắc",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giá trị lỗi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Điều kiện đã áp dụng",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giải thích",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code requiredBắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "∅Giá trị nguyên bản (JSON)[\"\"]",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Giá trị bắt buộc đang thiếu.Mã lỗi kỹ thuậtREQUIRED_MISSING",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Phiên bản đang chọn",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Cấu trúc bộ dữ liệu",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Áp dụng chung cho các phiên bản",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "narrow-overview",
+      "screenshot": "ux03a-narrow-overview.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll_y": 0,
+      "document_width": 375,
+      "body_width": 375,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Tổng quan",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 141,
+        "bottom": 141
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "static",
+          "top": "149px",
+          "x": 16,
+          "y": 161,
+          "width": 343,
+          "height": 216.375,
+          "bottom": 377.375
+        }
+      ],
+      "table_scrollers": [],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "26px",
+            "line_height": "31.2px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Lần chạy #45 · Phiên bản 2 · 22:28 19 thg 10, 2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Kết quả đã lưu theo snapshot của lần chạy này; không tự cập nhật theo quy tắc hiện tại.",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Sửa thông tin",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Mở kết quả lần #45",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "narrow-data",
+      "screenshot": "ux03a-narrow-data.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll_y": 0,
+      "document_width": 375,
+      "body_width": 375,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Dữ liệu và cấu trúc",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 141,
+        "bottom": 141
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "static",
+          "top": "149px",
+          "x": 16,
+          "y": 161,
+          "width": 343,
+          "height": 216.375,
+          "bottom": 377.375
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 339,
+          "scroll_width": 348,
+          "overflow_x": "auto",
+          "x": 17,
+          "y": 882.25,
+          "width": 341,
+          "height": 248,
+          "bottom": 1130.25
+        },
+        {
+          "client_width": 339,
+          "scroll_width": 351,
+          "overflow_x": "auto",
+          "x": 17,
+          "y": 1331.25,
+          "width": 341,
+          "height": 573,
+          "bottom": 1904.25
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "26px",
+            "line_height": "31.2px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Ký hiệu ∅ chỉ chuỗi rỗng; dữ liệu gốc không bị thay đổi. Khoảng trắng và xuống dòng được g",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Kiểu được suy luận từ dữ liệu, chỉ là gợi ý; dữ liệu gốc không thay đổi.",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Chưa cung cấp",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "Chưa cung cấp",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Sửa mô tả",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Sửa mô tả",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "amount",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "FIX001",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "100",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "2",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "001",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "0",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "3",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "日本語",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "0",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Ký hiệu ∅ chỉ chuỗi rỗng; dữ liệu gốc không bị thay đổi. Khoảng trắng và xuống dòng được g",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Kiểu được suy luận từ dữ liệu, chỉ là gợi ý; dữ liệu gốc không thay đổi.",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "narrow-rules",
+      "screenshot": "ux03a-narrow-rules.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll_y": 0,
+      "document_width": 375,
+      "body_width": 375,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Quy tắc",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 141,
+        "bottom": 141
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "static",
+          "top": "149px",
+          "x": 16,
+          "y": 161,
+          "width": 343,
+          "height": 216.375,
+          "bottom": 377.375
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 339,
+          "scroll_width": 943,
+          "overflow_x": "auto",
+          "x": 17,
+          "y": 954.25,
+          "width": 341,
+          "height": 201,
+          "bottom": 1155.25
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "26px",
+            "line_height": "31.2px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Quy tắc thuộc bộ dữ liệu, áp dụng chung cho các phiên bản; không phải quy tắc riêng của ph",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng số quy tắc: 2",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tạo quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "AI gợi ý quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Tên",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Loại",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cấu hình",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Trạng thái",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Thao tác",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code required",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Bắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trịChi tiết kỹ thuậtrequired{}",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Đang bật",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Quy tắc thuộc bộ dữ liệu, áp dụng chung cho các phiên bản; không phải quy tắc riêng của ph",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng số quy tắc: 2",
+            "font_size": "13px",
+            "line_height": "19.5px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "narrow-runs",
+      "screenshot": "ux03a-narrow-runs.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll_y": 0,
+      "document_width": 375,
+      "body_width": 375,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Kết quả kiểm tra",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 141,
+        "bottom": 141
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "static",
+          "top": "149px",
+          "x": 16,
+          "y": 161,
+          "width": 343,
+          "height": 216.375,
+          "bottom": 377.375
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 311,
+          "scroll_width": 788,
+          "overflow_x": "auto",
+          "x": 31,
+          "y": 2053.25,
+          "width": 313,
+          "height": 377,
+          "bottom": 2430.25
+        },
+        {
+          "client_width": 311,
+          "scroll_width": 839,
+          "overflow_x": "auto",
+          "x": 31,
+          "y": 2829.75,
+          "width": 313,
+          "height": 1607,
+          "bottom": 4436.75
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "26px",
+            "line_height": "31.2px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Hoàn tất — phiên bản 1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Đây là kết quả đã lưu của phiên bản 1, không phải kết quả tự cập nhật theo phiên bản đang ",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Bắt đầu: 16:55:04 14/10/2026; kết thúc: 16:55:05 14/10/2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Một bản ghi có thể có nhiều vi phạm.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Theo các quy tắc đã áp dụng. Đây là kết quả, không phải tiến độ quét.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Engine: quality-v1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tỷ lệ lỗi đã lưu: 50.0000%",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "∅: chuỗi rỗng; ⟨null⟩: null. Khoảng trắng và xuống dòng giữ nguyên.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng lỗi phù hợp bộ lọc: 3",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Xuất báo cáo",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Lọc bản ghi",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Đối chiếu hai lần chạy",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Quy tắc",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giá trị lỗi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Điều kiện đã áp dụng",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giải thích",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code requiredBắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "∅Giá trị nguyên bản (JSON)[\"\"]",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Giá trị bắt buộc đang thiếu.Mã lỗi kỹ thuậtREQUIRED_MISSING",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "narrow-runs-scrolled",
+      "screenshot": "ux03a-narrow-runs-scrolled.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll_y": 590,
+      "document_width": 375,
+      "body_width": 375,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Kết quả kiểm tra",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 141,
+        "bottom": 141
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "static",
+          "top": "149px",
+          "x": 16,
+          "y": -429,
+          "width": 343,
+          "height": 216.375,
+          "bottom": -212.625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 311,
+          "scroll_width": 788,
+          "overflow_x": "auto",
+          "x": 31,
+          "y": 1463.25,
+          "width": 313,
+          "height": 377,
+          "bottom": 1840.25
+        },
+        {
+          "client_width": 311,
+          "scroll_width": 839,
+          "overflow_x": "auto",
+          "x": 31,
+          "y": 2239.75,
+          "width": 313,
+          "height": 1607,
+          "bottom": 3846.75
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "26px",
+            "line_height": "31.2px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Hoàn tất — phiên bản 1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Đây là kết quả đã lưu của phiên bản 1, không phải kết quả tự cập nhật theo phiên bản đang ",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Bắt đầu: 16:55:04 14/10/2026; kết thúc: 16:55:05 14/10/2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Một bản ghi có thể có nhiều vi phạm.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Theo các quy tắc đã áp dụng. Đây là kết quả, không phải tiến độ quét.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Engine: quality-v1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tỷ lệ lỗi đã lưu: 50.0000%",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "∅: chuỗi rỗng; ⟨null⟩: null. Khoảng trắng và xuống dòng giữ nguyên.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng lỗi phù hợp bộ lọc: 3",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Xuất báo cáo",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Lọc bản ghi",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Đối chiếu hai lần chạy",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Quy tắc",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giá trị lỗi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Điều kiện đã áp dụng",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giải thích",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code requiredBắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "∅Giá trị nguyên bản (JSON)[\"\"]",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Giá trị bắt buộc đang thiếu.Mã lỗi kỹ thuậtREQUIRED_MISSING",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    },
+    {
+      "label": "narrow-runs-violations",
+      "screenshot": "ux03a-narrow-runs-violations.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll_y": 1897,
+      "document_width": 375,
+      "body_width": 375,
+      "document_horizontal_overflow": false,
+      "selected_tab": "Kết quả kiểm tra",
+      "navbar": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 141,
+        "bottom": 141
+      },
+      "contexts": [
+        {
+          "selector": "dataset-taskbar",
+          "position": "static",
+          "top": "149px",
+          "x": 16,
+          "y": -1736,
+          "width": 343,
+          "height": 216.375,
+          "bottom": -1519.625
+        }
+      ],
+      "table_scrollers": [
+        {
+          "client_width": 311,
+          "scroll_width": 788,
+          "overflow_x": "auto",
+          "x": 31,
+          "y": 156.25,
+          "width": 313,
+          "height": 377,
+          "bottom": 533.25
+        },
+        {
+          "client_width": 311,
+          "scroll_width": 839,
+          "overflow_x": "auto",
+          "x": 31,
+          "y": 932.75,
+          "width": 313,
+          "height": 1607,
+          "bottom": 2539.75
+        }
+      ],
+      "overflow_elements": [],
+      "typography": {
+        "headings": [
+          {
+            "tag": "H1",
+            "text": "Demo Quality Errors 16",
+            "font_size": "26px",
+            "line_height": "31.2px"
+          }
+        ],
+        "body": [
+          {
+            "tag": "P",
+            "text": "Tỷ lệ thuộc lần chạy #45, theo snapshot quy tắc đã áp dụng; 0 vi phạm không chứng minh dữ ",
+            "font_size": "12px",
+            "line_height": "18px"
+          },
+          {
+            "tag": "P",
+            "text": "Hoàn tất — phiên bản 1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Đây là kết quả đã lưu của phiên bản 1, không phải kết quả tự cập nhật theo phiên bản đang ",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Bắt đầu: 16:55:04 14/10/2026; kết thúc: 16:55:05 14/10/2026",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Một bản ghi có thể có nhiều vi phạm.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Theo các quy tắc đã áp dụng. Đây là kết quả, không phải tiến độ quét.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Engine: quality-v1",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tỷ lệ lỗi đã lưu: 50.0000%",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "required",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "numeric_range",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "∅: chuỗi rỗng; ⟨null⟩: null. Khoảng trắng và xuống dòng giữ nguyên.",
+            "font_size": "16px",
+            "line_height": "24px"
+          },
+          {
+            "tag": "P",
+            "text": "Tổng lỗi phù hợp bộ lọc: 3",
+            "font_size": "16px",
+            "line_height": "24px"
+          }
+        ],
+        "buttons": [
+          {
+            "tag": "BUTTON",
+            "text": "",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Nhập phiên bản mới",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Chạy kiểm tra",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Tổng quan",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Dữ liệu và cấu trúc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Quy tắc",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Kết quả kiểm tra",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Xuất báo cáo",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Lọc bản ghi",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang trước",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Trang sau",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Đối chiếu hai lần chạy",
+            "font_size": "15px",
+            "line_height": "22.5px"
+          }
+        ],
+        "tables": [
+          {
+            "tag": "TH",
+            "text": "Bản ghi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Quy tắc",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Cột",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giá trị lỗi",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Điều kiện đã áp dụng",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TH",
+            "text": "Giải thích",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "1",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Code requiredBắt buộc có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "code",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "∅Giá trị nguyên bản (JSON)[\"\"]",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Cột code phải có giá trị",
+            "font_size": "14px",
+            "line_height": "21px"
+          },
+          {
+            "tag": "TD",
+            "text": "Giá trị bắt buộc đang thiếu.Mã lỗi kỹ thuậtREQUIRED_MISSING",
+            "font_size": "14px",
+            "line_height": "21px"
+          }
+        ],
+        "notes": [
+          {
+            "tag": "SMALL",
+            "text": "Lần chạy #45 · Phiên bản 2Hoàn tất: 22:28 19 thg 10, 2026",
+            "font_size": "12px",
+            "line_height": "18px"
+          }
+        ]
+      },
+      "run_buttons": 1
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/health"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28"
+    },
+    {
+      "method": "GET",
+      "path": "/api/health"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/rules"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/versions/30/rows"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/rules"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/rules"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/versions/30/rows"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/rules"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs/45"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs/2"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs/2"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs/2/violations"
+    },
+    {
+      "method": "GET",
+      "path": "/api/datasets/28/runs/2/violations"
+    }
+  ],
+  "blocked_requests": [],
+  "failures": [],
+  "api_methods": [
+    "GET"
+  ],
+  "seven_business_tables_unchanged": true,
+  "temporary_auth_session_revoked": true,
+  "business_checksums": {
+    "datasets": "39355e5caa3599129522885d2118fe8bdf06c956567dd21fec365e146614f15e",
+    "dataset_columns": "e3f74d7da36de4ab3ba67f127bb64c6ad4a56f008b8c0447be062d650753d941",
+    "dataset_versions": "55b9318fa64831a047993789731f543b198835f477afb2f8d087376371581862",
+    "dataset_rows": "dc1a629ac27dbbe0fddd1abae53dd3efa0d787b724c00f0c709bd0ce053bfeed",
+    "quality_rules": "6765b5de849181beb1f5b0526170e3761ed452c3bb1229c17b1f1b0880f7a62a",
+    "quality_runs": "0a94f429fd54ac6e447fe433ae5d3014c00dbae72a7962d29ad09cf4d052042f",
+    "quality_violations": "601f605f10bcb06b49eafb4f98121d4e61bfd18507788bb8231da0407a6030be"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "verified_by": "production frontend client authenticated GET through proxy; not browser acceptance",
+  "dataset_id": 28,
+  "pairs": [
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "calls": [
+    "/api/datasets/28/run-comparison?a_run_id=2&b_run_id=5",
+    "/api/datasets/28/run-comparison?a_run_id=5&b_run_id=2",
+    "/api/datasets/28/run-comparison?a_run_id=2&b_run_id=2"
+  ],
+  "response": {
+    "dataset_id": 28,
+    "a": {
+      "run_id": 2,
+      "version": {
+        "id": 28,
+        "version_number": 1,
+        "original_filename": "quality_errors_demo.csv"
+      },
+      "status": "completed",
+      "started_at": "2026-10-14T09:55:04.957183+00:00",
+      "finished_at": "2026-10-14T09:55:05.016629+00:00",
+      "engine_version": "quality-v1",
+      "rule_set_fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87",
+      "total_rows": 4,
+      "error_row_count": 2,
+      "violation_count": 3,
+      "error_row_rate": "50.0000",
+      "pass_rate": "50.0000",
+      "rule_snapshot": [
+        {
+          "id": 2,
+          "name": "Code required",
+          "config": {},
+          "columns": [
+            "code"
+          ],
+          "rule_type": "required"
+        },
+        {
+          "id": 3,
+          "name": "Amount 0 to 100",
+          "config": {
+            "max": "100",
+            "min": "0"
+          },
+          "columns": [
+            "amount"
+          ],
+          "rule_type": "numeric_range"
+        }
+      ]
+    },
+    "b": {
+      "run_id": 5,
+      "version": {
+        "id": 30,
+        "version_number": 2,
+        "original_filename": "quality_errors_fixed.csv"
+      },
+      "status": "completed",
+      "started_at": "2026-10-14T10:18:18.381174+00:00",
+      "finished_at": "2026-10-14T10:18:18.476175+00:00",
+      "engine_version": "quality-v1",
+      "rule_set_fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87",
+      "total_rows": 4,
+      "error_row_count": 0,
+      "violation_count": 0,
+      "error_row_rate": "0.0000",
+      "pass_rate": "100.0000",
+      "rule_snapshot": [
+        {
+          "id": 2,
+          "name": "Code required",
+          "config": {},
+          "columns": [
+            "code"
+          ],
+          "rule_type": "required"
+        },
+        {
+          "id": 3,
+          "name": "Amount 0 to 100",
+          "config": {
+            "max": "100",
+            "min": "0"
+          },
+          "columns": [
+            "amount"
+          ],
+          "rule_type": "numeric_range"
+        }
+      ]
+    },
+    "same_run": false,
+    "comparable": true,
+    "non_comparable_reasons": [],
+    "delta": {
+      "total_rows": 0,
+      "error_row_count": -2,
+      "violation_count": -3,
+      "error_row_rate": "-50.0000",
+      "pass_rate": "50.0000"
+    }
+  },
+  "seven_business_tables_unchanged": true,
+  "business_checksums": {
+    "datasets": "39355e5caa3599129522885d2118fe8bdf06c956567dd21fec365e146614f15e",
+    "dataset_columns": "e3f74d7da36de4ab3ba67f127bb64c6ad4a56f008b8c0447be062d650753d941",
+    "dataset_versions": "55b9318fa64831a047993789731f543b198835f477afb2f8d087376371581862",
+    "dataset_rows": "dc1a629ac27dbbe0fddd1abae53dd3efa0d787b724c00f0c709bd0ce053bfeed",
+    "quality_rules": "6765b5de849181beb1f5b0526170e3761ed452c3bb1229c17b1f1b0880f7a62a",
+    "quality_runs": "022d6d74cc58bd9432c108cc564f14b4e9476f5af1f480a2fc2569e68ab859e0",
+    "quality_violations": "49296a83739a68727e2b277b5fd93eba58063bac9cb8b0a2ede9dbf9d677bb74"
+  },
+  "temporary_auth_session_revoked": true
+}

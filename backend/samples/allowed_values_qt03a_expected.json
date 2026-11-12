@@ -1,0 +1,106 @@
+{
+  "columns": [
+    "status"
+  ],
+  "config": {
+    "values": [
+      "NEW",
+      "DONE",
+      "HOLD"
+    ]
+  },
+  "rows": [
+    [
+      "NEW"
+    ],
+    [
+      "DONE"
+    ],
+    [
+      "HOLD"
+    ],
+    [
+      "new"
+    ],
+    [
+      " NEW"
+    ],
+    [
+      "NEW "
+    ],
+    [
+      ""
+    ],
+    [
+      "   "
+    ],
+    [
+      "NULL"
+    ],
+    [
+      "CANCELLED"
+    ]
+  ],
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 5,
+    "violation_count": 5,
+    "error_row_rate": "50.0000"
+  },
+  "violations": [
+    {
+      "row_number": 4,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "new"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET"
+    },
+    {
+      "row_number": 5,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        " NEW"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET"
+    },
+    {
+      "row_number": 6,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "NEW "
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET"
+    },
+    {
+      "row_number": 9,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "NULL"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET"
+    },
+    {
+      "row_number": 10,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "CANCELLED"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET"
+    }
+  ],
+  "missing_records": [
+    7,
+    8
+  ]
+}

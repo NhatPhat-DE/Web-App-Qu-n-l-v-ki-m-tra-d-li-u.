@@ -1,0 +1,166 @@
+{
+  "report_schema_version": "1",
+  "exported_at": "2026-10-18T16:38:53.913190+00:00",
+  "dataset_metadata_source": "current_at_export",
+  "dataset_metadata_note": "Metadata bộ dữ liệu hiện tại khi xuất, không phải snapshot tại thời điểm chạy.",
+  "dataset": {
+    "id": 48,
+    "name": "QT-04A Pattern RE2 Demo",
+    "description": null,
+    "source": "samples/pattern_qt04a.csv",
+    "owner": null
+  },
+  "version": {
+    "id": 52,
+    "version_number": 1,
+    "original_filename": "pattern_qt04a.csv",
+    "row_count": 10,
+    "imported_at": "2026-10-18T16:38:52.838056+00:00"
+  },
+  "run": {
+    "id": 41,
+    "status": "completed",
+    "started_at": "2026-10-18T16:38:53.112267+00:00",
+    "finished_at": "2026-10-18T16:38:53.309136+00:00",
+    "engine_version": "quality-v5",
+    "total_rows": 10,
+    "error_row_count": 7,
+    "violation_count": 7,
+    "error_row_rate": "70.0000"
+  },
+  "rule_snapshot": [
+    {
+      "id": 35,
+      "name": "Product code SP + four ASCII digits",
+      "config": {
+        "dialect": "re2-v1",
+        "pattern": "SP[0-9]{4}"
+      },
+      "columns": [
+        "product_code"
+      ],
+      "rule_type": "pattern"
+    }
+  ],
+  "violations": [
+    {
+      "id": 179,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 3,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        "sp0001"
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    },
+    {
+      "id": 180,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 4,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        "SP123"
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    },
+    {
+      "id": 181,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 5,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        " SP0001"
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    },
+    {
+      "id": 182,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 6,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        "SP0001 "
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    },
+    {
+      "id": 183,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 7,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        "SP00001"
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    },
+    {
+      "id": 184,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 9,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        "NULL"
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    },
+    {
+      "id": 185,
+      "run_id": 41,
+      "rule_id_snapshot": 35,
+      "rule_type": "pattern",
+      "rule_order": 1,
+      "row_number": 10,
+      "columns": [
+        "product_code"
+      ],
+      "values": [
+        "AB0001"
+      ],
+      "error_code": "PATTERN_MISMATCH",
+      "message": "Giá trị không khớp toàn chuỗi với mẫu \"SP[0-9]{4}\" (re2-v1); phân biệt hoa/thường, giữ khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Product code SP + four ASCII digits"
+    }
+  ]
+}

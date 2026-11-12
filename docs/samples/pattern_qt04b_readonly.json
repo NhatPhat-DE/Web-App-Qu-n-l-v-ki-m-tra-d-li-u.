@@ -1,0 +1,48 @@
+{
+  "dataset_id": 48,
+  "version_id": 52,
+  "run_id": 41,
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 7,
+    "violation_count": 7,
+    "error_row_rate": "70.0000"
+  },
+  "error_rows": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "paths": [
+    "/api/datasets/48/rules?page=1&page_size=20",
+    "/api/datasets/48/runs/41",
+    "/api/datasets/48/runs/41/violations?page=1&page_size=20",
+    "/api/datasets/48/runs/41/violations?page=2&page_size=20",
+    "/api/datasets/48/runs/41/violations?page=3&page_size=20",
+    "/api/datasets/48/runs/41/violations?page=4&page_size=20",
+    "/api/datasets/48/runs/41/report",
+    "/api/datasets/48/runs/41/report.xlsx",
+    "/api/datasets/48/runs?page=1&page_size=20&version_id=52",
+    "/api/datasets/48/versions/52/rows?page=1&page_size=20",
+    "/api/datasets/48/runs/41/violations?page=1&page_size=20&rule_id_snapshot=35&row_number=5"
+  ],
+  "only_get": true,
+  "raw_snapshot_history_json_xlsx_client_verified": true,
+  "xlsx_bytes": 8800,
+  "browser_acceptance": false,
+  "business_table_checksums_before_after": {
+    "datasets": "f857f66afc6fe5af8ebe5a4a9767b54ae3654d30787139e02a8846c13cc932dc",
+    "dataset_columns": "a6f8df8b417c2a13ec887cf2b7839764099cdba74a2c3b09d75fdd570b731368",
+    "dataset_versions": "d2c2448dec8675bae79cf2686be3c9ac95b0336f0526fce5d1b25ab53a03086e",
+    "dataset_rows": "891222c317cd68b3e3dea9502f22c2523cabf34d3d0ab4eea82d90894cc80aea",
+    "quality_rules": "faf19fb94804ebec9a2b33ee4f39fcf5f55618dfd00fb79aa838347a7bdeb5cb",
+    "quality_runs": "7b761545c766d1a8c2480ad7c7314d718f0d761a22ec1ac2329c6f623ed001e5",
+    "quality_violations": "bf01bffa842e9ba4cf1ae5a20e6a33cf811a68c79de7ed24b7ef1f5cb3335f07"
+  },
+  "business_data_unchanged": true,
+  "temporary_auth_session_revoked_in_finally": true
+}

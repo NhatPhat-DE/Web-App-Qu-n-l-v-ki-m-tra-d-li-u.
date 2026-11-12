@@ -1,0 +1,93 @@
+{
+  "note": "Đáp án viết trước nghiệm thu trình duyệt QT-03C. Dataset thử riêng, đúng một rule allowed_values bật; không required hoặc rule khác. Không sửa demo46. Các bản ghi và giá trị nguyên bản giữ như CSV backend demo.",
+  "columns": [
+    "status"
+  ],
+  "rows": [
+    [
+      "NEW"
+    ],
+    [
+      "DONE"
+    ],
+    [
+      "HOLD"
+    ],
+    [
+      "new"
+    ],
+    [
+      " NEW"
+    ],
+    [
+      "NEW "
+    ],
+    [
+      ""
+    ],
+    [
+      "   "
+    ],
+    [
+      "NULL"
+    ],
+    [
+      "CANCELLED"
+    ]
+  ],
+  "initial": {
+    "config": {
+      "values": [
+        "NEW",
+        "DONE",
+        "HOLD"
+      ]
+    },
+    "statistics": {
+      "total_rows": 10,
+      "error_row_count": 5,
+      "violation_count": 5,
+      "error_row_rate": "50.0000"
+    },
+    "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+    "error_records": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "missing_records": [
+      7,
+      8
+    ]
+  },
+  "after_add_exact_new": {
+    "config": {
+      "values": [
+        "NEW",
+        "DONE",
+        "HOLD",
+        "new"
+      ]
+    },
+    "statistics": {
+      "total_rows": 10,
+      "error_row_count": 4,
+      "violation_count": 4,
+      "error_row_rate": "40.0000"
+    },
+    "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+    "error_records": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "missing_records": [
+      7,
+      8
+    ]
+  },
+  "old_run_after_edit": "Snapshot cũ giữ values=[NEW,DONE,HOLD], 10/5/5/50.0000%, lỗi4,5,6,9,10. Không sửa/chạy lại run cũ."
+}

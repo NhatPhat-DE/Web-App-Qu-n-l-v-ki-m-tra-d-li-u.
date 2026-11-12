@@ -1,0 +1,173 @@
+{
+  "dataset_id": 46,
+  "name": "QT-03A Allowed Values Demo",
+  "version_id": 50,
+  "rule_id": 33,
+  "run_id": 38,
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 5,
+    "violation_count": 5,
+    "error_row_rate": "50.0000"
+  },
+  "engine_version": "quality-v4",
+  "fingerprint": "rules-v2:9ef2e6cdafb582d2b7ee920b7529ca4dc53a67c2c39343f1470f49a688543dcf",
+  "parser_rows": [
+    [
+      "NEW"
+    ],
+    [
+      "DONE"
+    ],
+    [
+      "HOLD"
+    ],
+    [
+      "new"
+    ],
+    [
+      " NEW"
+    ],
+    [
+      "NEW "
+    ],
+    [
+      ""
+    ],
+    [
+      "   "
+    ],
+    [
+      "NULL"
+    ],
+    [
+      "CANCELLED"
+    ]
+  ],
+  "violations": [
+    {
+      "id": 165,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 4,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "new"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 166,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 5,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        " NEW"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 167,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 6,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "NEW "
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 168,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 9,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "NULL"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 169,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 10,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "CANCELLED"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    }
+  ],
+  "old_run_count": 37,
+  "old_data_checks": {
+    "datasets": {
+      "old_count": 17,
+      "old_sha256": "56836084c1d1a72266e855f6ac85b09f0ef189881f63a2542f63f30aefc845ef",
+      "unchanged": true
+    },
+    "dataset_columns": {
+      "old_count": 75,
+      "old_sha256": "71b5fd938dcc96719f354098b049f9d217e709dcbdd23072b4a2de21ffafbc8c",
+      "unchanged": true
+    },
+    "dataset_versions": {
+      "old_count": 21,
+      "old_sha256": "c0d384d1ad0204868bf3691ebc48f43a66dd2b8121f28d16c980eed98695251a",
+      "unchanged": true
+    },
+    "dataset_rows": {
+      "old_count": 220,
+      "old_sha256": "98221b448f2ab36e215efa4f8bb12c70a46274cfad6fb4cf98a1ad4d774b5a21",
+      "unchanged": true
+    },
+    "quality_rules": {
+      "old_count": 32,
+      "old_sha256": "9a7901a5e6b8c9978aea3c1a25322fb996e3196e9464032fd598c5f26adfda0c",
+      "unchanged": true
+    },
+    "quality_runs": {
+      "old_count": 37,
+      "old_sha256": "6e894f6b731e5a0a8a2165319d2b7187953a8e5442ce05bf1b6529f03374b4f7",
+      "unchanged": true
+    },
+    "quality_violations": {
+      "old_count": 164,
+      "old_sha256": "a740d5cd330c4c3ae44d9adaf3ea8e6c52b335264e4f0626eaedf93ced20fb8b",
+      "unchanged": true
+    }
+  },
+  "report_file": "dataset-46-run-38-allowed-values-report.json"
+}

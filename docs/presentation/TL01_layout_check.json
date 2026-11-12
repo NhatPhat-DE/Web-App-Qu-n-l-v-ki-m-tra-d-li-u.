@@ -1,0 +1,95 @@
+{
+  "word_version": "16.0",
+  "visual_review": true,
+  "a4_height_points": 841.9,
+  "a4_width_points": 595.3,
+  "pdf_exported": true,
+  "body_font_size": 13,
+  "body_font": "Times New Roman",
+  "headings": [
+    {
+      "text": "1. TÊN ĐỀ TÀI VÀ GIỚI THIỆU NGẮN",
+      "page": 2
+    },
+    {
+      "text": "2. LÝ DO CHỌN ĐỀ TÀI",
+      "page": 2
+    },
+    {
+      "text": "3. VẤN ĐỀ NGHIỆP VỤ",
+      "page": 2
+    },
+    {
+      "text": "4. TRẢ LỜI ĐÚNG SÁU CÂU HỎI",
+      "page": 3
+    },
+    {
+      "text": "4.1. Đơn vị hoặc tổ chức nào đang gặp vấn đề?",
+      "page": 3
+    },
+    {
+      "text": "4.2. Quy trình hiện tại đang được thực hiện như thế nào?",
+      "page": 3
+    },
+    {
+      "text": "4.3. Bất cập nằm ở bước nào?",
+      "page": 4
+    },
+    {
+      "text": "4.4. Những ai tham gia quy trình?",
+      "page": 5
+    },
+    {
+      "text": "4.5. Những dữ liệu, chứng từ, biểu mẫu nào được tạo ra?",
+      "page": 5
+    },
+    {
+      "text": "4.6. Hệ thống mới giúp giảm sai sót, tiết kiệm thời gian hoặc cải thiện quyết định như thế nào?",
+      "page": 6
+    },
+    {
+      "text": "5. MỤC TIÊU VÀ PHẠM VI BÀI TOÁN",
+      "page": 7
+    },
+    {
+      "text": "6. QUY TRÌNH KHI CÓ HỆ THỐNG",
+      "page": 8
+    },
+    {
+      "text": "7. VÍ DỤ MINH HỌA XUYÊN SUỐT",
+      "page": 9
+    },
+    {
+      "text": "8. TÓM TẮT GIẢI PHÁP VÀ CÔNG NGHỆ",
+      "page": 10
+    },
+    {
+      "text": "Căn cứ đối chiếu và giới hạn bằng chứng",
+      "page": 11
+    },
+    {
+      "text": "9. BÀI NÓI TRÌNH BÀY 3–5 PHÚT",
+      "page": 12
+    }
+  ],
+  "toc_count": 1,
+  "tables": 7,
+  "pages": 12,
+  "visual_review_scope": "12-page contact sheet and full-size example/technology tables; header orphan and amount width corrected, final PDF rerendered",
+  "png_render_pages": 12,
+  "render_engine": "Microsoft Word16.0 PDF export + Windows.Data.Pdf",
+  "checks": {
+    "zip_xml_valid": true,
+    "six_exact_question_headings": true,
+    "seven_tables": true,
+    "seven_rule_types": true,
+    "a4": true,
+    "normal_times_new_roman_13": true,
+    "automatic_toc": true,
+    "page_fields": true,
+    "no_engine_or_gemini_called": true,
+    "application_code_and_database_unchanged": true
+  },
+  "docx_sha256": "d547eb2d8725882676cac78aea62667b1cb975efbaed274bb2b37e227174bc86",
+  "pdf_sha256": "2b85ace2f9b7c18d75af969acb0b95acdd0c9496b9242bdab895c89f95709641"
+}

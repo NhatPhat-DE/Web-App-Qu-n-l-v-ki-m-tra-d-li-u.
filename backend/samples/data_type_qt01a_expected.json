@@ -1,0 +1,30 @@
+{
+  "note": "Đáp án viết trước khi chạy API/engine. Chỉ ba data_type rules, theo thứ tự integer/decimal/boolean; thiếu được bỏ qua.",
+  "columns": ["integer_value", "decimal_value", "boolean_value"],
+  "rows": [
+    ["0012", "01.20", "true"],
+    ["+12", ".5", "false"],
+    ["-0", "1.", "true"],
+    ["1.0", "-1e+3", "TRUE"],
+    ["1e3", "NaN", "1"],
+    [" 1 ", "1,2", " false "],
+    ["", "", ""],
+    ["１２", "1_000", "NULL"],
+    ["42", "1.234567", "false"],
+    ["   ", "\t", " "]
+  ],
+  "statistics": {"total_rows": 10, "error_row_count": 4, "violation_count": 11, "error_row_rate": "40.0000"},
+  "violations": [
+    {"row_number":4,"rule_order":1,"columns":["integer_value"],"values":["1.0"],"error_code":"DATA_TYPE_INTEGER_INVALID"},
+    {"row_number":4,"rule_order":3,"columns":["boolean_value"],"values":["TRUE"],"error_code":"DATA_TYPE_BOOLEAN_INVALID"},
+    {"row_number":5,"rule_order":1,"columns":["integer_value"],"values":["1e3"],"error_code":"DATA_TYPE_INTEGER_INVALID"},
+    {"row_number":5,"rule_order":2,"columns":["decimal_value"],"values":["NaN"],"error_code":"DATA_TYPE_DECIMAL_INVALID"},
+    {"row_number":5,"rule_order":3,"columns":["boolean_value"],"values":["1"],"error_code":"DATA_TYPE_BOOLEAN_INVALID"},
+    {"row_number":6,"rule_order":1,"columns":["integer_value"],"values":[" 1 "],"error_code":"DATA_TYPE_INTEGER_INVALID"},
+    {"row_number":6,"rule_order":2,"columns":["decimal_value"],"values":["1,2"],"error_code":"DATA_TYPE_DECIMAL_INVALID"},
+    {"row_number":6,"rule_order":3,"columns":["boolean_value"],"values":[" false "],"error_code":"DATA_TYPE_BOOLEAN_INVALID"},
+    {"row_number":8,"rule_order":1,"columns":["integer_value"],"values":["１２"],"error_code":"DATA_TYPE_INTEGER_INVALID"},
+    {"row_number":8,"rule_order":2,"columns":["decimal_value"],"values":["1_000"],"error_code":"DATA_TYPE_DECIMAL_INVALID"},
+    {"row_number":8,"rule_order":3,"columns":["boolean_value"],"values":["NULL"],"error_code":"DATA_TYPE_BOOLEAN_INVALID"}
+  ]
+}

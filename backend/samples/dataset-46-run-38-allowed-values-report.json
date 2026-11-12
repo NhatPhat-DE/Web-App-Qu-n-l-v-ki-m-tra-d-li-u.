@@ -1,0 +1,135 @@
+{
+  "report_schema_version": "1",
+  "exported_at": "2026-10-18T11:06:32.350959+00:00",
+  "dataset_metadata_source": "current_at_export",
+  "dataset_metadata_note": "Metadata bộ dữ liệu hiện tại khi xuất, không phải snapshot tại thời điểm chạy.",
+  "dataset": {
+    "id": 46,
+    "name": "QT-03A Allowed Values Demo",
+    "description": null,
+    "source": "samples/allowed_values_qt03a.csv",
+    "owner": null
+  },
+  "version": {
+    "id": 50,
+    "version_number": 1,
+    "original_filename": "allowed_values_qt03a.csv",
+    "row_count": 10,
+    "imported_at": "2026-10-18T11:06:31.343884+00:00"
+  },
+  "run": {
+    "id": 38,
+    "status": "completed",
+    "started_at": "2026-10-18T11:06:31.733557+00:00",
+    "finished_at": "2026-10-18T11:06:31.797132+00:00",
+    "engine_version": "quality-v4",
+    "total_rows": 10,
+    "error_row_count": 5,
+    "violation_count": 5,
+    "error_row_rate": "50.0000"
+  },
+  "rule_snapshot": [
+    {
+      "id": 33,
+      "name": "Allowed status NEW DONE HOLD",
+      "config": {
+        "values": [
+          "NEW",
+          "DONE",
+          "HOLD"
+        ]
+      },
+      "columns": [
+        "status"
+      ],
+      "rule_type": "allowed_values"
+    }
+  ],
+  "violations": [
+    {
+      "id": 165,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 4,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "new"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 166,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 5,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        " NEW"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 167,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 6,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "NEW "
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 168,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 9,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "NULL"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    },
+    {
+      "id": 169,
+      "run_id": 38,
+      "rule_id_snapshot": 33,
+      "rule_type": "allowed_values",
+      "rule_order": 1,
+      "row_number": 10,
+      "columns": [
+        "status"
+      ],
+      "values": [
+        "CANCELLED"
+      ],
+      "error_code": "ALLOWED_VALUE_NOT_IN_SET",
+      "message": "Giá trị không thuộc tập cho phép [\"NEW\", \"DONE\", \"HOLD\"]; so sánh nguyên bản, phân biệt hoa/thường và khoảng trắng. Đối chiếu nguồn dữ liệu.",
+      "rule_name": "Allowed status NEW DONE HOLD"
+    }
+  ]
+}

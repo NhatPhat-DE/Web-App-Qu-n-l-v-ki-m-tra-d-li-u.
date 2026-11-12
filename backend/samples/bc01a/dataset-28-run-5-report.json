@@ -1,0 +1,55 @@
+{
+  "report_schema_version": "1",
+  "exported_at": "2026-10-18T12:08:34.882132+00:00",
+  "dataset_metadata_source": "current_at_export",
+  "dataset_metadata_note": "Metadata bộ dữ liệu hiện tại khi xuất, không phải snapshot tại thời điểm chạy.",
+  "dataset": {
+    "id": 28,
+    "name": "Demo Quality Errors 16",
+    "description": "Expected: 4 rows, 2 error rows, 3 violations, 50%",
+    "source": "samples/quality_errors_demo.csv",
+    "owner": null
+  },
+  "version": {
+    "id": 30,
+    "version_number": 2,
+    "original_filename": "quality_errors_fixed.csv",
+    "row_count": 4,
+    "imported_at": "2026-10-14T10:18:18.068419+00:00"
+  },
+  "run": {
+    "id": 5,
+    "status": "completed",
+    "started_at": "2026-10-14T10:18:18.381174+00:00",
+    "finished_at": "2026-10-14T10:18:18.476175+00:00",
+    "engine_version": "quality-v1",
+    "total_rows": 4,
+    "error_row_count": 0,
+    "violation_count": 0,
+    "error_row_rate": "0.0000"
+  },
+  "rule_snapshot": [
+    {
+      "id": 2,
+      "name": "Code required",
+      "config": {},
+      "columns": [
+        "code"
+      ],
+      "rule_type": "required"
+    },
+    {
+      "id": 3,
+      "name": "Amount 0 to 100",
+      "config": {
+        "max": "100",
+        "min": "0"
+      },
+      "columns": [
+        "amount"
+      ],
+      "rule_type": "numeric_range"
+    }
+  ],
+  "violations": []
+}

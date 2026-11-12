@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "dataset_id": 28,
+      "run_id": 2,
+      "run": {
+        "id": 2,
+        "status": "completed",
+        "started_at": "2026-10-14T09:55:04.957183+00:00",
+        "finished_at": "2026-10-14T09:55:05.016629+00:00",
+        "engine_version": "quality-v1",
+        "total_rows": 4,
+        "error_row_count": 2,
+        "violation_count": 3,
+        "error_row_rate": "50.0000"
+      },
+      "xlsx_bytes": 8684,
+      "attachment": "attachment; filename=\"dataset-28-run-2-report.xlsx\"",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "json_logical_unchanged": true,
+      "ooxml_verified": true
+    },
+    {
+      "dataset_id": 28,
+      "run_id": 5,
+      "run": {
+        "id": 5,
+        "status": "completed",
+        "started_at": "2026-10-14T10:18:18.381174+00:00",
+        "finished_at": "2026-10-14T10:18:18.476175+00:00",
+        "engine_version": "quality-v1",
+        "total_rows": 4,
+        "error_row_count": 0,
+        "violation_count": 0,
+        "error_row_rate": "0.0000"
+      },
+      "xlsx_bytes": 8305,
+      "attachment": "attachment; filename=\"dataset-28-run-5-report.xlsx\"",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "json_logical_unchanged": true,
+      "ooxml_verified": true
+    },
+    {
+      "dataset_id": 42,
+      "run_id": 28,
+      "run": {
+        "id": 28,
+        "status": "completed",
+        "started_at": "2026-10-18T06:40:34.775148+00:00",
+        "finished_at": "2026-10-18T06:40:34.811193+00:00",
+        "engine_version": "quality-v2",
+        "total_rows": 10,
+        "error_row_count": 4,
+        "violation_count": 11,
+        "error_row_rate": "40.0000"
+      },
+      "xlsx_bytes": 9202,
+      "attachment": "attachment; filename=\"dataset-42-run-28-report.xlsx\"",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "json_logical_unchanged": true,
+      "ooxml_verified": true
+    },
+    {
+      "dataset_id": 44,
+      "run_id": 33,
+      "run": {
+        "id": 33,
+        "status": "completed",
+        "started_at": "2026-10-18T07:25:25.113405+00:00",
+        "finished_at": "2026-10-18T07:25:25.149900+00:00",
+        "engine_version": "quality-v3",
+        "total_rows": 8,
+        "error_row_count": 5,
+        "violation_count": 5,
+        "error_row_rate": "62.5000"
+      },
+      "xlsx_bytes": 8750,
+      "attachment": "attachment; filename=\"dataset-44-run-33-report.xlsx\"",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "json_logical_unchanged": true,
+      "ooxml_verified": true
+    },
+    {
+      "dataset_id": 46,
+      "run_id": 38,
+      "run": {
+        "id": 38,
+        "status": "completed",
+        "started_at": "2026-10-18T11:06:31.733557+00:00",
+        "finished_at": "2026-10-18T11:06:31.797132+00:00",
+        "engine_version": "quality-v4",
+        "total_rows": 10,
+        "error_row_count": 5,
+        "violation_count": 5,
+        "error_row_rate": "50.0000"
+      },
+      "xlsx_bytes": 8715,
+      "attachment": "attachment; filename=\"dataset-46-run-38-report.xlsx\"",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "json_logical_unchanged": true,
+      "ooxml_verified": true
+    }
+  ],
+  "business_tables": {
+    "datasets": {
+      "count": 19,
+      "sha256": "28261e81905063054551cea3ed6a1274d1ffa6b0a4f2934473a5d44d3f0e14c6"
+    },
+    "dataset_columns": {
+      "count": 77,
+      "sha256": "c41cd98b9fd2edf7dddf02c39ed8807b2fada2f8e1f2e3d526b64b599f44a7b1"
+    },
+    "dataset_versions": {
+      "count": 23,
+      "sha256": "a0a2be60892d3759803cc6512ca5a5ab30c25f0e7d869fb23a83cf3b1cbc448c"
+    },
+    "dataset_rows": {
+      "count": 240,
+      "sha256": "fd0dd6a1e4b765a7b72eac5450cff2a85ca9290f2516bef9acad2f6d211ab59e"
+    },
+    "quality_rules": {
+      "count": 34,
+      "sha256": "73d933e669686bc048889d80d1a617e4026d1262459e0761b18d2c857a4a4fa3"
+    },
+    "quality_runs": {
+      "count": 40,
+      "sha256": "d5cff3d457424a628542cf1e8779eb934d330779fdbcdac1ed5ad0bb93d90de3"
+    },
+    "quality_violations": {
+      "count": 178,
+      "sha256": "c3237e09a595927db076cb00aeb6dc54f97ec6271bc1ed0f5cc245b1d92ba483"
+    }
+  },
+  "business_data_unchanged": true,
+  "temporary_session_revoked_in_finally": true,
+  "manual_excel_libreoffice_open": false
+}

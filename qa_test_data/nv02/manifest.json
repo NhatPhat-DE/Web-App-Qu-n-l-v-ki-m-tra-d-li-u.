@@ -1,0 +1,963 @@
+{
+  "created_at": "2026-11-09T19:31:23.539133+07:00",
+  "dataset_id": 57,
+  "identity_columns": [
+    "id",
+    "part"
+  ],
+  "batches": [
+    {
+      "id": 34,
+      "name": "NV-02 A — Đã đối soát và hoàn tất",
+      "url": "http://127.0.0.1:5173/#/datasets/57/batches/34?issues=1",
+      "stages": [
+        {
+          "label": "v1: OPEN 3",
+          "version_id": 73,
+          "run_id": 68,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/68",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 2,
+            "violation_count": 3
+          },
+          "counts": {
+            "OPEN": 3,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 0,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 1,
+            "batch_id": 34,
+            "run_id": 68,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": true,
+            "result": "BASELINE",
+            "reasons": [],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:23.878041+00:00",
+            "counts": {
+              "NEW": 3,
+              "PERSISTING": 0,
+              "RESOLVED": 0,
+              "UNKNOWN": 0
+            },
+            "items": [
+              {
+                "id": 1,
+                "reconciliation_id": 1,
+                "issue_id": 1,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 73
+              },
+              {
+                "id": 2,
+                "reconciliation_id": 1,
+                "issue_id": 2,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 73
+              },
+              {
+                "id": 3,
+                "reconciliation_id": 1,
+                "issue_id": 3,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 73
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 1,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 2,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 3,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            }
+          ]
+        },
+        {
+          "label": "v2 đảo dòng: RESOLVED 2 / OPEN 2",
+          "version_id": 74,
+          "run_id": 69,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/69",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 2,
+            "violation_count": 2
+          },
+          "counts": {
+            "OPEN": 2,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 2,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 2,
+            "batch_id": 34,
+            "run_id": 69,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": true,
+            "result": "RECONCILED",
+            "reasons": [],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:24.723832+00:00",
+            "counts": {
+              "NEW": 1,
+              "PERSISTING": 1,
+              "RESOLVED": 2,
+              "UNKNOWN": 0
+            },
+            "items": [
+              {
+                "id": 4,
+                "reconciliation_id": 2,
+                "issue_id": 2,
+                "outcome": "PERSISTING",
+                "reason": null,
+                "source_version_id": 73
+              },
+              {
+                "id": 5,
+                "reconciliation_id": 2,
+                "issue_id": 4,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 74
+              },
+              {
+                "id": 6,
+                "reconciliation_id": 2,
+                "issue_id": 1,
+                "outcome": "RESOLVED",
+                "reason": null,
+                "source_version_id": 73
+              },
+              {
+                "id": 7,
+                "reconciliation_id": 2,
+                "issue_id": 3,
+                "outcome": "RESOLVED",
+                "reason": null,
+                "source_version_id": 73
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 1,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "RESOLVED",
+              "uncertain_reason": null
+            },
+            {
+              "id": 2,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 3,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "RESOLVED",
+              "uncertain_reason": null
+            },
+            {
+              "id": 4,
+              "key_values": [
+                "B",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            }
+          ]
+        },
+        {
+          "label": "v3: RESOLVED 4 / 0 vi phạm",
+          "version_id": 75,
+          "run_id": 70,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/70",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 0,
+            "violation_count": 0
+          },
+          "counts": {
+            "OPEN": 0,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 4,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 3,
+            "batch_id": 34,
+            "run_id": 70,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": true,
+            "result": "RECONCILED",
+            "reasons": [],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:25.164138+00:00",
+            "counts": {
+              "NEW": 0,
+              "PERSISTING": 0,
+              "RESOLVED": 2,
+              "UNKNOWN": 0
+            },
+            "items": [
+              {
+                "id": 8,
+                "reconciliation_id": 3,
+                "issue_id": 2,
+                "outcome": "RESOLVED",
+                "reason": null,
+                "source_version_id": 73
+              },
+              {
+                "id": 9,
+                "reconciliation_id": 3,
+                "issue_id": 4,
+                "outcome": "RESOLVED",
+                "reason": null,
+                "source_version_id": 74
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 1,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "RESOLVED",
+              "uncertain_reason": null
+            },
+            {
+              "id": 2,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "RESOLVED",
+              "uncertain_reason": null
+            },
+            {
+              "id": 3,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "RESOLVED",
+              "uncertain_reason": null
+            },
+            {
+              "id": 4,
+              "key_values": [
+                "B",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "RESOLVED",
+              "uncertain_reason": null
+            }
+          ]
+        }
+      ],
+      "final": {
+        "business_state": "COMPLETED",
+        "counts": {
+          "OPEN": 0,
+          "IN_PROGRESS": 0,
+          "PENDING_RECHECK": 0,
+          "RESOLVED": 4,
+          "IGNORED": 0
+        },
+        "events": [
+          {
+            "id": 2,
+            "batch_id": 34,
+            "action": "COMPLETED",
+            "from_state": "PROCESSING",
+            "to_state": "COMPLETED",
+            "note": "QA NV-02: xác nhận bản sạch và bằng chứng đối soát",
+            "actor_id": 1,
+            "actor_label": "admin",
+            "evidence": {
+              "run_id": 70,
+              "ignored": [],
+              "reasons": [],
+              "version_id": 75,
+              "can_complete": true,
+              "reconciliation_id": 3
+            },
+            "created_at": "2026-11-09 12:31:25.362337+00:00"
+          },
+          {
+            "id": 1,
+            "batch_id": 34,
+            "action": "INITIALIZED",
+            "from_state": "RECEIVING",
+            "to_state": "PROCESSING",
+            "note": "Đăng ký rõ ràng các kết quả cũ theo thứ tự phiên bản.",
+            "actor_id": 1,
+            "actor_label": "admin",
+            "evidence": {},
+            "created_at": "2026-11-09 12:31:23.715344+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "NV-02 B — Thực hành tải bản sửa",
+      "url": "http://127.0.0.1:5173/#/datasets/57/batches/35?issues=1",
+      "stages": [
+        {
+          "label": "v1: 3 lỗi cần xử lý",
+          "version_id": 76,
+          "run_id": 71,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/71",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 2,
+            "violation_count": 3
+          },
+          "counts": {
+            "OPEN": 3,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 0,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 4,
+            "batch_id": 35,
+            "run_id": 71,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": true,
+            "result": "BASELINE",
+            "reasons": [],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:25.815180+00:00",
+            "counts": {
+              "NEW": 3,
+              "PERSISTING": 0,
+              "RESOLVED": 0,
+              "UNKNOWN": 0
+            },
+            "items": [
+              {
+                "id": 10,
+                "reconciliation_id": 4,
+                "issue_id": 5,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 76
+              },
+              {
+                "id": 11,
+                "reconciliation_id": 4,
+                "issue_id": 6,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 76
+              },
+              {
+                "id": 12,
+                "reconciliation_id": 4,
+                "issue_id": 7,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 76
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 5,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 6,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 7,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            }
+          ]
+        }
+      ],
+      "final": {
+        "business_state": "PROCESSING",
+        "counts": {
+          "OPEN": 0,
+          "IN_PROGRESS": 0,
+          "PENDING_RECHECK": 3,
+          "RESOLVED": 0,
+          "IGNORED": 0
+        },
+        "events": [
+          {
+            "id": 3,
+            "batch_id": 35,
+            "action": "INITIALIZED",
+            "from_state": "RECEIVING",
+            "to_state": "PROCESSING",
+            "note": "Đăng ký rõ ràng các kết quả cũ theo thứ tự phiên bản.",
+            "actor_id": 1,
+            "actor_label": "admin",
+            "evidence": {},
+            "created_at": "2026-11-09 12:31:25.671000+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "NV-02 C — Thiếu khóa, chưa thể đối soát",
+      "url": "http://127.0.0.1:5173/#/datasets/57/batches/36?issues=1",
+      "stages": [
+        {
+          "label": "v1: OPEN 3",
+          "version_id": 77,
+          "run_id": 72,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/72",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 2,
+            "violation_count": 3
+          },
+          "counts": {
+            "OPEN": 3,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 0,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 5,
+            "batch_id": 36,
+            "run_id": 72,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": true,
+            "result": "BASELINE",
+            "reasons": [],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:26.833973+00:00",
+            "counts": {
+              "NEW": 3,
+              "PERSISTING": 0,
+              "RESOLVED": 0,
+              "UNKNOWN": 0
+            },
+            "items": [
+              {
+                "id": 13,
+                "reconciliation_id": 5,
+                "issue_id": 8,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 77
+              },
+              {
+                "id": 14,
+                "reconciliation_id": 5,
+                "issue_id": 9,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 77
+              },
+              {
+                "id": 15,
+                "reconciliation_id": 5,
+                "issue_id": 10,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 77
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 8,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 9,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 10,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            }
+          ]
+        },
+        {
+          "label": "v2 sạch theo quy tắc nhưng thiếu khóa: OPEN 3 / UNKNOWN 3",
+          "version_id": 78,
+          "run_id": 73,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/73",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 0,
+            "violation_count": 0
+          },
+          "counts": {
+            "OPEN": 3,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 0,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 6,
+            "batch_id": 36,
+            "run_id": 73,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": false,
+            "result": "PARTIAL",
+            "reasons": [
+              "IDENTITY_MISSING"
+            ],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:27.201790+00:00",
+            "counts": {
+              "NEW": 0,
+              "PERSISTING": 0,
+              "RESOLVED": 0,
+              "UNKNOWN": 3
+            },
+            "items": [
+              {
+                "id": 16,
+                "reconciliation_id": 6,
+                "issue_id": 8,
+                "outcome": "UNKNOWN",
+                "reason": "IDENTITY_MISSING",
+                "source_version_id": 77
+              },
+              {
+                "id": 17,
+                "reconciliation_id": 6,
+                "issue_id": 9,
+                "outcome": "UNKNOWN",
+                "reason": "IDENTITY_MISSING",
+                "source_version_id": 77
+              },
+              {
+                "id": 18,
+                "reconciliation_id": 6,
+                "issue_id": 10,
+                "outcome": "UNKNOWN",
+                "reason": "IDENTITY_MISSING",
+                "source_version_id": 77
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 8,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": "IDENTITY_MISSING"
+            },
+            {
+              "id": 9,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": "IDENTITY_MISSING"
+            },
+            {
+              "id": 10,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": "IDENTITY_MISSING"
+            }
+          ]
+        }
+      ],
+      "final": {
+        "business_state": "PROCESSING",
+        "counts": {
+          "OPEN": 3,
+          "IN_PROGRESS": 0,
+          "PENDING_RECHECK": 0,
+          "RESOLVED": 0,
+          "IGNORED": 0
+        },
+        "events": [
+          {
+            "id": 4,
+            "batch_id": 36,
+            "action": "INITIALIZED",
+            "from_state": "RECEIVING",
+            "to_state": "PROCESSING",
+            "note": "Đăng ký rõ ràng các kết quả cũ theo thứ tự phiên bản.",
+            "actor_id": 1,
+            "actor_label": "admin",
+            "evidence": {},
+            "created_at": "2026-11-09 12:31:26.674716+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "name": "NV-02 D — Hoàn tất có ngoại lệ rõ ràng",
+      "url": "http://127.0.0.1:5173/#/datasets/57/batches/37?issues=1",
+      "stages": [
+        {
+          "label": "v1: 3 vi phạm giữ nguyên",
+          "version_id": 79,
+          "run_id": 74,
+          "results_url": "http://127.0.0.1:5173/#/datasets/57/runs/74",
+          "quality": {
+            "total_rows": 3,
+            "error_row_count": 2,
+            "violation_count": 3
+          },
+          "counts": {
+            "OPEN": 3,
+            "IN_PROGRESS": 0,
+            "PENDING_RECHECK": 0,
+            "RESOLVED": 0,
+            "IGNORED": 0
+          },
+          "reconciliation": {
+            "id": 7,
+            "batch_id": 37,
+            "run_id": 74,
+            "identity_config_id": 1,
+            "identity_revision": 1,
+            "identity_columns": [
+              "id",
+              "part"
+            ],
+            "eligible": true,
+            "result": "BASELINE",
+            "reasons": [],
+            "actor_id": null,
+            "created_at": "2026-11-09 12:31:27.850890+00:00",
+            "counts": {
+              "NEW": 3,
+              "PERSISTING": 0,
+              "RESOLVED": 0,
+              "UNKNOWN": 0
+            },
+            "items": [
+              {
+                "id": 19,
+                "reconciliation_id": 7,
+                "issue_id": 11,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 79
+              },
+              {
+                "id": 20,
+                "reconciliation_id": 7,
+                "issue_id": 12,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 79
+              },
+              {
+                "id": 21,
+                "reconciliation_id": 7,
+                "issue_id": 13,
+                "outcome": "NEW",
+                "reason": null,
+                "source_version_id": 79
+              }
+            ]
+          },
+          "issues": [
+            {
+              "id": 11,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 12,
+              "key_values": [
+                "A",
+                "X"
+              ],
+              "rule": "Tên bắt buộc",
+              "columns": [
+                "name"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            },
+            {
+              "id": 13,
+              "key_values": [
+                "C",
+                "X"
+              ],
+              "rule": "Điểm 0–10",
+              "columns": [
+                "amount"
+              ],
+              "status": "OPEN",
+              "uncertain_reason": null
+            }
+          ]
+        }
+      ],
+      "final": {
+        "business_state": "COMPLETED",
+        "counts": {
+          "OPEN": 0,
+          "IN_PROGRESS": 0,
+          "PENDING_RECHECK": 0,
+          "RESOLVED": 0,
+          "IGNORED": 3
+        },
+        "events": [
+          {
+            "id": 6,
+            "batch_id": 37,
+            "action": "COMPLETED",
+            "from_state": "PROCESSING",
+            "to_state": "COMPLETED",
+            "note": "QA NV-02: xác nhận cả 3 ngoại lệ, giữ nguyên 3 vi phạm trong kết quả",
+            "actor_id": 1,
+            "actor_label": "admin",
+            "evidence": {
+              "run_id": 74,
+              "ignored": [
+                {
+                  "id": 11,
+                  "ignored_note": "QA NV-02: ngoại lệ được phê duyệt để minh họa, không phải dữ liệu đã sửa"
+                },
+                {
+                  "id": 12,
+                  "ignored_note": "QA NV-02: ngoại lệ được phê duyệt để minh họa, không phải dữ liệu đã sửa"
+                },
+                {
+                  "id": 13,
+                  "ignored_note": "QA NV-02: ngoại lệ được phê duyệt để minh họa, không phải dữ liệu đã sửa"
+                }
+              ],
+              "reasons": [],
+              "version_id": 79,
+              "can_complete": true,
+              "reconciliation_id": 7
+            },
+            "created_at": "2026-11-09 12:31:28.255946+00:00"
+          },
+          {
+            "id": 5,
+            "batch_id": 37,
+            "action": "INITIALIZED",
+            "from_state": "RECEIVING",
+            "to_state": "PROCESSING",
+            "note": "Đăng ký rõ ràng các kết quả cũ theo thứ tự phiên bản.",
+            "actor_id": 1,
+            "actor_label": "admin",
+            "evidence": {},
+            "created_at": "2026-11-09 12:31:27.735645+00:00"
+          }
+        ]
+      }
+    }
+  ],
+  "pre_existing_rows_unchanged": true
+}

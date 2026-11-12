@@ -1,0 +1,84 @@
+node verify-ux03-workflow.mjs
+exit_code=0
+(node:6392) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: UX-03A stable tabs/single version-scoped run action; busy/lock/stale/session guards; saved summary/status/time/pass rate, Xem lỗi focuses correct run without GET/POST, failed/zero handling, Mở kết quả history, safe/full long-rule details, hidden duplicate metrics, snapshot warning and pagination. Hook/SSR/mocks only; native browser acceptance is separate.
+
+node verify-run-comparison.mjs
+exit_code=0
+(node:4948) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: comparison client/errors/identity/Decimal spelling; actual hook A/B/swap/same/manual GET/lock/cancel/reopen/stale/session/dataset; picker pagination/completed; SSR basis/null delta/snapshot/text. Mock/SSR, not browser acceptance.
+
+node verify-business.mjs
+exit_code=0
+PASS: in-memory CSRF/same-origin/FormData no Content-Type,403 CSRF refresh notification,503 retains session,401 clears requests/session notification. No browser UI test.
+(node:5316) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-auth.mjs
+exit_code=0
+(node:25052) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: me401 anonymous, login success/error, password exact, cookie same-origin, CSRF header, logout204,403/429/503/network no automatic retry; real proxy me401 challenge. Client/HTTP only, not browser UI.
+
+node verify-modal.mjs
+exit_code=0
+PASS: rule modal form/footer association and long markup,create/edit defaults/exact decimals,busy fieldset;mock create/patch/validation/network/no retry. SSR shell only: native dialog,busy close,dirty,ESC,backdrop,focus,scroll,responsive UI NOT verified.
+PASS: version modal submit association and file input; metadata null/empty PATCH contract preserved. Native dialog UI still unverified.
+(node:23512) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-export.mjs
+exit_code=0
+(node:14836) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: Excel/JSON client, safe filename/fallback, invalid MIME/JSON/ZIP/errors/no retry; modal default/identity/choice/error/manual retry;duplicate lock/body abort/session expiry/stale results/object URL release. Hook/SSR/mock only, browser NOT verified.
+
+node verify-pattern.mjs
+exit_code=0
+(node:17980) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: pattern raw config/create/edit/transitions6legacy/codepoints/UTF8/draft/lock/AI; grammar only backend; no JS pattern execution; snapshot/raw/text safety; client busy/budget/runtime errors, no retry, aborted body. Hook/SSR/mock only; browser NOT verified.
+
+node verify-data-type.mjs
+exit_code=0
+PASS: data_type create/edit/3configs/type transitions/old rules; actual form handlers dirty/error/lock/busy; AI scope rejects outside types at response/draft/save; mock API cookie/CSRF/errors/no retry; snapshot table raw values/codes and stored demo answers. Hook/SSR tests only; browser interaction NOT verified. No real writes or provider calls.
+(node:13836) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-date-format.mjs
+exit_code=0
+PASS: date_format3configs/create/edit/type transitions; regression4types; dirty/error/lock/busy/validation; mock POST/PATCH cookie/CSRF/errors/no retry; AI rejects date response/draft/save/form; snapshot labels/raw values/backend messages and stored demo. Hook/SSR only, browser NOT verified; no real writes/provider calls.
+(node:11356) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-allowed-values.mjs
+exit_code=0
+PASS: allowed_values actual form add/delete/edit/config/order/comma/newline;Unicode/codepoint/UTF8/limits/duplicates/case/space;5oldtypes/type transitions;dirty/error/lock/Enter;mock cookie/CSRF/no retry;AI guard;full safe snapshot/labels/report. Hook/SSR only, browser NOT verified;no real writes/Gemini.
+(node:11772) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-ai.mjs
+exit_code=0
+PASS: mock preview/consent/nonempty/empty,409/429/504/config errors,save failure/network,no retry,stale responses blocked; shared form SSR preserves manual defaults,AI inactive,decimal strings,escaped text. No Gemini call or browser UI test.
+(node:18380) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-catalog-search.mjs
+exit_code=0
+(node:21204) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: query Unicode/limits/literals, client encoding/errors, delayed-body abort/session guard; hook typing/submit/duplicate/pagination/retry/draft/back/import/reload/identity/stale guards. Mock tests, not browser acceptance.
+
+node verify-report.mjs --mock-only
+exit_code=0
+PASS: report client mock 404/409/503 never read error blob; valid filename/fallback/unsafe filename/content type. Mock-only; live legacy datasets not requested. Browser download not tested.
+(node:23456) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+node verify-dashboard.mjs --mock-only
+exit_code=0
+PASS: dashboard mock Decimal/pagination/empty/version checks; live checks intentionally not requested.
+(node:14472) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

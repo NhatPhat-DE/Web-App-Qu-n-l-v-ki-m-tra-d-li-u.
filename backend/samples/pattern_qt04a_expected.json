@@ -1,0 +1,54 @@
+{
+  "config": {
+    "pattern": "SP[0-9]{4}",
+    "dialect": "re2-v1"
+  },
+  "rows": [
+    [
+      "SP0001"
+    ],
+    [
+      "SP9999"
+    ],
+    [
+      "sp0001"
+    ],
+    [
+      "SP123"
+    ],
+    [
+      " SP0001"
+    ],
+    [
+      "SP0001 "
+    ],
+    [
+      "SP00001"
+    ],
+    [
+      ""
+    ],
+    [
+      "NULL"
+    ],
+    [
+      "AB0001"
+    ]
+  ],
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 7,
+    "violation_count": 7,
+    "error_row_rate": "70.0000"
+  },
+  "error_rows": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+  ],
+  "error_code": "PATTERN_MISMATCH"
+}

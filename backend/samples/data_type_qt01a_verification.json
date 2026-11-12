@@ -1,0 +1,62 @@
+{
+  "dataset_name": "QT-01A Data Type Demo",
+  "dataset_id": 42,
+  "version_id": 46,
+  "run_id": 28,
+  "rule_ids": [
+    25,
+    26,
+    27
+  ],
+  "statistics": {
+    "total_rows": 10,
+    "error_row_count": 4,
+    "violation_count": 11,
+    "error_row_rate": "40.0000"
+  },
+  "engine_version": "quality-v2",
+  "rule_set_fingerprint": "rules-v2:d117607915d5ae940764ef39ac9089a141e8182b00a36f3fcb5b9d482aafef90",
+  "verified_all_violations": 11,
+  "preexisting_runs_read": 27,
+  "preexisting_business_data_unchanged": true,
+  "baseline_checksums": {
+    "datasets": {
+      "max_id": 41,
+      "count": 13,
+      "sha256": "04706a57bb7e768c29cfa4510ef99b4c861cd1e5bf959a63f25569aeef0ac32d"
+    },
+    "dataset_columns": {
+      "max_id": 116,
+      "count": 67,
+      "sha256": "28147ab09cede3a09313c18592804245d3c0b7597cf0e357e095ddd994089e74"
+    },
+    "dataset_versions": {
+      "max_id": 45,
+      "count": 17,
+      "sha256": "826d4baf63de9fa991d19e5c51f9de2053970a3ac90f9b39c85482ab08c6b941"
+    },
+    "dataset_rows": {
+      "max_id": 226,
+      "count": 184,
+      "sha256": "605346ab3c6d8ce664a73031e987b46dd8e4a20c62b40c28b2339d8dec45c714"
+    },
+    "quality_rules": {
+      "max_id": 24,
+      "count": 24,
+      "sha256": "2abe797630cd5f2c1d8c9061ba6e9193e23622bd36d7be0ffc6f46f37c3e215d"
+    },
+    "quality_runs": {
+      "max_id": 27,
+      "count": 27,
+      "sha256": "ecfebf1260322296cb8cff293f24d64eb05e8de10ea24385fe7d1edc7dd4ec2c"
+    },
+    "quality_violations": {
+      "max_id": 86,
+      "count": 86,
+      "sha256": "8db66f82bd386d342eacf5f6484c568635fe8f51b281cfacbb733d9cabe84a3b"
+    }
+  },
+  "authentication": "Existing active admin; temporary local session; revoked in finally; no password or token saved.",
+  "report_file": "samples/dataset-42-run-28-data-type-report.json",
+  "provider_called": false
+}

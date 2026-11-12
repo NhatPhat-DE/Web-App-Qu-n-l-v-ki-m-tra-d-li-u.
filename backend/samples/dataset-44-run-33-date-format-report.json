@@ -1,0 +1,131 @@
+{
+  "report_schema_version": "1",
+  "exported_at": "2026-10-18T07:25:25.462931+00:00",
+  "dataset_metadata_source": "current_at_export",
+  "dataset_metadata_note": "Metadata bộ dữ liệu hiện tại khi xuất, không phải snapshot tại thời điểm chạy.",
+  "dataset": {
+    "id": 44,
+    "name": "QT-02A Date Format Demo",
+    "description": "QT-02A: 8 rows, 5 error rows, 5 violations, 62.5000%; quoted empty record7 is skipped.",
+    "source": "samples/date_format_qt02a.csv",
+    "owner": "QT-02A verification"
+  },
+  "version": {
+    "id": 48,
+    "version_number": 1,
+    "original_filename": "date_format_qt02a.csv",
+    "row_count": 8,
+    "imported_at": "2026-10-18T07:25:24.774161+00:00"
+  },
+  "run": {
+    "id": 33,
+    "status": "completed",
+    "started_at": "2026-10-18T07:25:25.113405+00:00",
+    "finished_at": "2026-10-18T07:25:25.149900+00:00",
+    "engine_version": "quality-v3",
+    "total_rows": 8,
+    "error_row_count": 5,
+    "violation_count": 5,
+    "error_row_rate": "62.5000"
+  },
+  "rule_snapshot": [
+    {
+      "id": 31,
+      "name": "Event date YYYY-MM-DD",
+      "config": {
+        "format": "YYYY-MM-DD"
+      },
+      "columns": [
+        "event_date"
+      ],
+      "rule_type": "date_format"
+    }
+  ],
+  "violations": [
+    {
+      "id": 131,
+      "run_id": 33,
+      "rule_id_snapshot": 31,
+      "rule_type": "date_format",
+      "rule_order": 1,
+      "row_number": 2,
+      "columns": [
+        "event_date"
+      ],
+      "values": [
+        "2023-02-29"
+      ],
+      "error_code": "DATE_VALUE_INVALID",
+      "message": "Ngày theo định dạng YYYY-MM-DD không tồn tại trong lịch Gregorian (năm 0001 đến 9999).",
+      "rule_name": "Event date YYYY-MM-DD"
+    },
+    {
+      "id": 132,
+      "run_id": 33,
+      "rule_id_snapshot": 31,
+      "rule_type": "date_format",
+      "rule_order": 1,
+      "row_number": 3,
+      "columns": [
+        "event_date"
+      ],
+      "values": [
+        "2026-04-31"
+      ],
+      "error_code": "DATE_VALUE_INVALID",
+      "message": "Ngày theo định dạng YYYY-MM-DD không tồn tại trong lịch Gregorian (năm 0001 đến 9999).",
+      "rule_name": "Event date YYYY-MM-DD"
+    },
+    {
+      "id": 133,
+      "run_id": 33,
+      "rule_id_snapshot": 31,
+      "rule_type": "date_format",
+      "rule_order": 1,
+      "row_number": 4,
+      "columns": [
+        "event_date"
+      ],
+      "values": [
+        "2026-2-01"
+      ],
+      "error_code": "DATE_FORMAT_MISMATCH",
+      "message": "Giá trị không đúng định dạng YYYY-MM-DD; cần đúng số chữ số và dấu phân cách, không có khoảng trắng ngoài.",
+      "rule_name": "Event date YYYY-MM-DD"
+    },
+    {
+      "id": 134,
+      "run_id": 33,
+      "rule_id_snapshot": 31,
+      "rule_type": "date_format",
+      "rule_order": 1,
+      "row_number": 5,
+      "columns": [
+        "event_date"
+      ],
+      "values": [
+        " 2026-01-01 "
+      ],
+      "error_code": "DATE_FORMAT_MISMATCH",
+      "message": "Giá trị không đúng định dạng YYYY-MM-DD; cần đúng số chữ số và dấu phân cách, không có khoảng trắng ngoài.",
+      "rule_name": "Event date YYYY-MM-DD"
+    },
+    {
+      "id": 135,
+      "run_id": 33,
+      "rule_id_snapshot": 31,
+      "rule_type": "date_format",
+      "rule_order": 1,
+      "row_number": 6,
+      "columns": [
+        "event_date"
+      ],
+      "values": [
+        "0000-01-01"
+      ],
+      "error_code": "DATE_VALUE_INVALID",
+      "message": "Ngày theo định dạng YYYY-MM-DD không tồn tại trong lịch Gregorian (năm 0001 đến 9999).",
+      "rule_name": "Event date YYYY-MM-DD"
+    }
+  ]
+}

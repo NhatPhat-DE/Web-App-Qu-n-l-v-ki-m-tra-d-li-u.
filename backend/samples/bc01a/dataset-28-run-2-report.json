@@ -1,0 +1,107 @@
+{
+  "report_schema_version": "1",
+  "exported_at": "2026-10-18T12:08:34.634320+00:00",
+  "dataset_metadata_source": "current_at_export",
+  "dataset_metadata_note": "Metadata bộ dữ liệu hiện tại khi xuất, không phải snapshot tại thời điểm chạy.",
+  "dataset": {
+    "id": 28,
+    "name": "Demo Quality Errors 16",
+    "description": "Expected: 4 rows, 2 error rows, 3 violations, 50%",
+    "source": "samples/quality_errors_demo.csv",
+    "owner": null
+  },
+  "version": {
+    "id": 28,
+    "version_number": 1,
+    "original_filename": "quality_errors_demo.csv",
+    "row_count": 4,
+    "imported_at": "2026-10-14T09:55:04.002019+00:00"
+  },
+  "run": {
+    "id": 2,
+    "status": "completed",
+    "started_at": "2026-10-14T09:55:04.957183+00:00",
+    "finished_at": "2026-10-14T09:55:05.016629+00:00",
+    "engine_version": "quality-v1",
+    "total_rows": 4,
+    "error_row_count": 2,
+    "violation_count": 3,
+    "error_row_rate": "50.0000"
+  },
+  "rule_snapshot": [
+    {
+      "id": 2,
+      "name": "Code required",
+      "config": {},
+      "columns": [
+        "code"
+      ],
+      "rule_type": "required"
+    },
+    {
+      "id": 3,
+      "name": "Amount 0 to 100",
+      "config": {
+        "max": "100",
+        "min": "0"
+      },
+      "columns": [
+        "amount"
+      ],
+      "rule_type": "numeric_range"
+    }
+  ],
+  "violations": [
+    {
+      "id": 1,
+      "run_id": 2,
+      "rule_id_snapshot": 2,
+      "rule_type": "required",
+      "rule_order": 1,
+      "row_number": 1,
+      "columns": [
+        "code"
+      ],
+      "values": [
+        ""
+      ],
+      "error_code": "REQUIRED_MISSING",
+      "message": "Giá trị bắt buộc đang thiếu.",
+      "rule_name": "Code required"
+    },
+    {
+      "id": 2,
+      "run_id": 2,
+      "rule_id_snapshot": 3,
+      "rule_type": "numeric_range",
+      "rule_order": 2,
+      "row_number": 1,
+      "columns": [
+        "amount"
+      ],
+      "values": [
+        "101"
+      ],
+      "error_code": "NUMERIC_OUT_OF_RANGE",
+      "message": "Giá trị nằm ngoài khoảng đóng cho phép.",
+      "rule_name": "Amount 0 to 100"
+    },
+    {
+      "id": 3,
+      "run_id": 2,
+      "rule_id_snapshot": 3,
+      "rule_type": "numeric_range",
+      "rule_order": 2,
+      "row_number": 2,
+      "columns": [
+        "amount"
+      ],
+      "values": [
+        "-1"
+      ],
+      "error_code": "NUMERIC_OUT_OF_RANGE",
+      "message": "Giá trị nằm ngoài khoảng đóng cho phép.",
+      "rule_name": "Amount 0 to 100"
+    }
+  ]
+}

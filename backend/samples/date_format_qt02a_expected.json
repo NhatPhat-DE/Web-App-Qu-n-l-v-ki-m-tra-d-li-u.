@@ -1,0 +1,14 @@
+{
+  "note": "Đáp án viết trước chạy API/engine. Rule date_format YYYY-MM-DD đang bật, không có required. CSV bản ghi 7 là một trường rỗng được quote, không phải dòng vật lý trống.",
+  "columns": ["event_date"],
+  "config": {"format":"YYYY-MM-DD"},
+  "rows": [["2024-02-29"],["2023-02-29"],["2026-04-31"],["2026-2-01"],[" 2026-01-01 "],["0000-01-01"],[""],["2026-12-31"]],
+  "statistics": {"total_rows":8,"error_row_count":5,"violation_count":5,"error_row_rate":"62.5000"},
+  "violations": [
+    {"row_number":2,"rule_order":1,"columns":["event_date"],"values":["2023-02-29"],"error_code":"DATE_VALUE_INVALID"},
+    {"row_number":3,"rule_order":1,"columns":["event_date"],"values":["2026-04-31"],"error_code":"DATE_VALUE_INVALID"},
+    {"row_number":4,"rule_order":1,"columns":["event_date"],"values":["2026-2-01"],"error_code":"DATE_FORMAT_MISMATCH"},
+    {"row_number":5,"rule_order":1,"columns":["event_date"],"values":[" 2026-01-01 "],"error_code":"DATE_FORMAT_MISMATCH"},
+    {"row_number":6,"rule_order":1,"columns":["event_date"],"values":["0000-01-01"],"error_code":"DATE_VALUE_INVALID"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1.1.20251105",
+  "requires_python": "~=3.9",
+  "license": null,
+  "requires_dist": null,
+  "wheel": {
+    "comment_text": null,
+    "core-metadata": {
+      "sha256": "2742f9a93084f7dd51efa9b0d89326259cb20ad3e3af178d988e22ced94ed172"
+    },
+    "digests": {
+      "blake2b_256": "49e5f83053a36cfc4762d843748e4f7a9c1141937dcf74cd6fc3f4598292dda3",
+      "md5": "2457066a79e828ffa2192d18c63633ad",
+      "sha256": "f5f856ff5036a8f22b3bad57f376d4e3b97b59b64f311bdb1f83c8dabded2492"
+    },
+    "downloads": -1,
+    "filename": "google_re2-1.1.20251105-1-cp311-cp311-win_amd64.whl",
+    "has_sig": false,
+    "md5_digest": "2457066a79e828ffa2192d18c63633ad",
+    "packagetype": "bdist_wheel",
+    "python_version": "cp311",
+    "requires_python": "~=3.9",
+    "size": 491025,
+    "upload_time": "2025-11-05T14:57:17",
+    "upload_time_iso_8601": "2025-11-05T14:57:17.746526Z",
+    "url": "https://files.pythonhosted.org/packages/49/e5/f83053a36cfc4762d843748e4f7a9c1141937dcf74cd6fc3f4598292dda3/google_re2-1.1.20251105-1-cp311-cp311-win_amd64.whl",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "license_verification": {
+    "wheel_license_sha256": "503bb3cc66bd5f0d070ca6bb7002aa678403279cf3a8de648f32b6ddfc940184",
+    "source_license_sha256": "6040cda75d90b1738292a631d89934c411ef7ffd543c4d6a1b7edfc8edf29449",
+    "text_equal_after_cr_and_terminal_whitespace_normalization": true,
+    "note": "Raw bytes differ due Windows line endings; license text matches pinned official source."
+  }
+}

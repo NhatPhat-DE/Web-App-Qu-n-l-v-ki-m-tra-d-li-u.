@@ -1,0 +1,292 @@
+{
+  "dataset_name": "QT-02A Date Format Demo",
+  "dataset_id": 44,
+  "version_id": 48,
+  "run_id": 33,
+  "rule_id": 31,
+  "config": {
+    "format": "YYYY-MM-DD"
+  },
+  "statistics": {
+    "total_rows": 8,
+    "error_row_count": 5,
+    "violation_count": 5,
+    "error_row_rate": "62.5000"
+  },
+  "engine_version": "quality-v3",
+  "rule_set_fingerprint": "rules-v2:5f30c2c9287002d5344e745a47dd8a1023b685a30d18816982d81c77b4e4e0a5",
+  "parser_empty_record7": true,
+  "verified_all_violations": 5,
+  "preexisting_runs_read": 32,
+  "preexisting_business_data_unchanged": true,
+  "preexisting_fingerprints_unchanged": true,
+  "baseline": {
+    "tables": {
+      "datasets": {
+        "max_id": 43,
+        "count": 15,
+        "sha256": "ac003cf288b3b8ec4cc95eaedde5d2b3fa4e1f4d35aff9dea152f40ed4098c17"
+      },
+      "dataset_columns": {
+        "max_id": 122,
+        "count": 73,
+        "sha256": "e8d9de73773050e8266b5e73af4e9b53a487e756d3cc349d327710c9d54bf391"
+      },
+      "dataset_versions": {
+        "max_id": 47,
+        "count": 19,
+        "sha256": "3b0510ecc1f22f9e6497bf546afd233be9821504a63d42e0ffa6bdf591de0fde"
+      },
+      "dataset_rows": {
+        "max_id": 242,
+        "count": 200,
+        "sha256": "00033474784087d8f2f26df9a2f285870c5248dc2b6e984f749ff6e02a756d39"
+      },
+      "quality_rules": {
+        "max_id": 30,
+        "count": 30,
+        "sha256": "68efd1fc5c94e0fd595cd31f7163c52246fc0ef6a3dba6f03976800b5ac78f7e"
+      },
+      "quality_runs": {
+        "max_id": 32,
+        "count": 32,
+        "sha256": "e1f4ee0247799b63ac562a758d8413c7f6c90475ae59449b091d13b919bb6763"
+      },
+      "quality_violations": {
+        "max_id": 130,
+        "count": 130,
+        "sha256": "ccefbf42cb3e065040e5221b9be8624a9ee979d127afbf720654270b5ca069c4"
+      }
+    },
+    "runs": [
+      {
+        "run_id": 1,
+        "dataset_id": 17,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:8a67dfad4742e3e373823234d9522d70ae95790889fd56285fbb74dc24b5926e"
+      },
+      {
+        "run_id": 2,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 3,
+        "dataset_id": 29,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:d20fdaee65ded77319035d0b0c37f9bbe05d27bff4ee11c10a3f6ddb5189bb66"
+      },
+      {
+        "run_id": 4,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 5,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 6,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 7,
+        "dataset_id": 29,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:d20fdaee65ded77319035d0b0c37f9bbe05d27bff4ee11c10a3f6ddb5189bb66"
+      },
+      {
+        "run_id": 8,
+        "dataset_id": 29,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:d20fdaee65ded77319035d0b0c37f9bbe05d27bff4ee11c10a3f6ddb5189bb66"
+      },
+      {
+        "run_id": 9,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 10,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 11,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 12,
+        "dataset_id": 29,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:8f92822a3d38f5537642dde4ea834dfb947a02a4405e5ba7b9cf946a5fad858b"
+      },
+      {
+        "run_id": 13,
+        "dataset_id": 23,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:ba867a5661abfaa3596ea3f9b1e650191a2d788a8ed94b5e1cc3f37c72d69299"
+      },
+      {
+        "run_id": 14,
+        "dataset_id": 23,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:e36dec96611f67276cfcc3d27d874bf4d66caca4fb75f7ea4820acb8effe0e21"
+      },
+      {
+        "run_id": 15,
+        "dataset_id": 23,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:ad8518ca7bdaaa2f2326e2114a9cefdafabbe9d3fb78c5fc8f493ba8932e7b9e"
+      },
+      {
+        "run_id": 16,
+        "dataset_id": 40,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:ad8518ca7bdaaa2f2326e2114a9cefdafabbe9d3fb78c5fc8f493ba8932e7b9e"
+      },
+      {
+        "run_id": 17,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 18,
+        "dataset_id": 40,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:ad8518ca7bdaaa2f2326e2114a9cefdafabbe9d3fb78c5fc8f493ba8932e7b9e"
+      },
+      {
+        "run_id": 19,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 20,
+        "dataset_id": 28,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:6e1d08c0ad0fd73a9ab69975b78f1dc010013bca4be5bb944d7eb139649cce87"
+      },
+      {
+        "run_id": 21,
+        "dataset_id": 40,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:ad8518ca7bdaaa2f2326e2114a9cefdafabbe9d3fb78c5fc8f493ba8932e7b9e"
+      },
+      {
+        "run_id": 22,
+        "dataset_id": 17,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:8a67dfad4742e3e373823234d9522d70ae95790889fd56285fbb74dc24b5926e"
+      },
+      {
+        "run_id": 23,
+        "dataset_id": 41,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:2a8c3193f5707e9e87d0fc97cf7062830e6197ac85e51abb81a3de1e7b50765f"
+      },
+      {
+        "run_id": 24,
+        "dataset_id": 41,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:2a8c3193f5707e9e87d0fc97cf7062830e6197ac85e51abb81a3de1e7b50765f"
+      },
+      {
+        "run_id": 25,
+        "dataset_id": 41,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:2a8c3193f5707e9e87d0fc97cf7062830e6197ac85e51abb81a3de1e7b50765f"
+      },
+      {
+        "run_id": 26,
+        "dataset_id": 41,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:e51ef072422cc214b0717b626a68e2fcc22cd56931eec0b41078a705c3ab9aa4"
+      },
+      {
+        "run_id": 27,
+        "dataset_id": 41,
+        "status": "completed",
+        "engine_version": "quality-v1",
+        "fingerprint": "rules-v1:2a8c3193f5707e9e87d0fc97cf7062830e6197ac85e51abb81a3de1e7b50765f"
+      },
+      {
+        "run_id": 28,
+        "dataset_id": 42,
+        "status": "completed",
+        "engine_version": "quality-v2",
+        "fingerprint": "rules-v2:d117607915d5ae940764ef39ac9089a141e8182b00a36f3fcb5b9d482aafef90"
+      },
+      {
+        "run_id": 29,
+        "dataset_id": 42,
+        "status": "completed",
+        "engine_version": "quality-v2",
+        "fingerprint": "rules-v2:d117607915d5ae940764ef39ac9089a141e8182b00a36f3fcb5b9d482aafef90"
+      },
+      {
+        "run_id": 30,
+        "dataset_id": 42,
+        "status": "completed",
+        "engine_version": "quality-v2",
+        "fingerprint": "rules-v2:d117607915d5ae940764ef39ac9089a141e8182b00a36f3fcb5b9d482aafef90"
+      },
+      {
+        "run_id": 31,
+        "dataset_id": 43,
+        "status": "completed",
+        "engine_version": "quality-v2",
+        "fingerprint": "rules-v2:6976dcd0307fd4f56b1455f3353285603e76864e52c46290247e2fcd272ddaa2"
+      },
+      {
+        "run_id": 32,
+        "dataset_id": 43,
+        "status": "completed",
+        "engine_version": "quality-v2",
+        "fingerprint": "rules-v2:73cbd7338afcc46e32972211f9e4bbe74c8def4866b81170710058c7b0e051ca"
+      }
+    ],
+    "running_runs": []
+  },
+  "report_file": "samples/dataset-44-run-33-date-format-report.json",
+  "provider_called": false,
+  "authentication": "Existing active admin; temporary local session; revoked in finally; no password/token saved."
+}

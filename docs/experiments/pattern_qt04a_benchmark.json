@@ -1,0 +1,56 @@
+{
+  "platform": "Windows-10-10.0.26100-SP0",
+  "python": "3.11.9",
+  "google_re2": "1.1.20251105",
+  "start_method": "spawn",
+  "deadline_seconds": 5,
+  "max_mem_per_expression": 8388608,
+  "hard_process_ram_cap": false,
+  "single_measurement_not_throughput_guarantee": true,
+  "workloads": [
+    {
+      "workload": "adversarial_nested_50MiB",
+      "rows": 12800,
+      "rule_count": 1,
+      "input_codepoints_per_value": 4096,
+      "actual_match_utf8_bytes": 52428800,
+      "mismatches": 12800,
+      "binary_result_bytes": 102400,
+      "phase_seconds_including_cleanup": 1.9724110000024666,
+      "preflight_seconds": 0.0034688000014284626
+    },
+    {
+      "workload": "adversarial_alternation_50MiB",
+      "rows": 12800,
+      "rule_count": 1,
+      "input_codepoints_per_value": 4096,
+      "actual_match_utf8_bytes": 52428800,
+      "mismatches": 12800,
+      "binary_result_bytes": 102400,
+      "phase_seconds_including_cleanup": 2.6939543999978923,
+      "preflight_seconds": 0.0033335999978589825
+    },
+    {
+      "workload": "ten_rules_50MiB",
+      "rows": 1280,
+      "rule_count": 10,
+      "input_codepoints_per_value": 4096,
+      "actual_match_utf8_bytes": 52428800,
+      "mismatches": 12800,
+      "binary_result_bytes": 102400,
+      "phase_seconds_including_cleanup": 0.5474009000026854,
+      "preflight_seconds": 0.003651999999419786
+    },
+    {
+      "workload": "large_result_800000_bytes",
+      "rows": 100000,
+      "rule_count": 1,
+      "input_codepoints_per_value": 1,
+      "actual_match_utf8_bytes": 100000,
+      "mismatches": 100000,
+      "binary_result_bytes": 800000,
+      "phase_seconds_including_cleanup": 0.6227011999944807,
+      "preflight_seconds": 0.016959799999312963
+    }
+  ]
+}
